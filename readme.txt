@@ -6,3 +6,4 @@ git add files
 git commit -m "commit message"
 git status
 git diff
+git log
