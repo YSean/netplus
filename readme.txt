@@ -76,6 +76,10 @@ git push origin :refs/tags/v0.9
 --配置git
 git config --global color.ui true
 	配置颜色
+git config --global alias.st status
+	配置命令别名
+cat .git/config 
+	查看配置文件位置
 --忽略文件
 不需要从头写.gitignore文件，GitHub已经为我们准备了各种配置文件，只需要组合一下就可以使用了。所有配置文件可以直接在线浏览：https://github.com/github/gitignore
 
