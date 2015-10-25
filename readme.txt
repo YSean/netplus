@@ -11,5 +11,9 @@ git log --pretty=online
 git reset 回退版本
 git reflog 可以记录每次执行命令的版本号
 git checkout -- files 相当于SVN 的 reverts
-git rm 在版本库中删除文件
+git rm 在版本库中删除文件	
 --
+gitHub生成密钥对
+ssh-keygen -t rsa -C "gdut_cb@163.com"
+git remote add origin git@github.com:michaelliao/learngit.git
+git remote add origin git@github.com:yogaling/netplus.git
