@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	<!-- oracle -->
+	<!-- <classPathEntry
+		location="C:/Oracle/Middleware/wlserver_10.3/server/lib/ojdbc6.jar" /> -->
+	<classPathEntry
+		location="D:/mvn_repository/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.jar" />
+	<context id="my" targetRuntime="MyBatis3">
+		<commentGenerator>
+			<property name="suppressDate" value="false" />
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+		<!-- oracle -->
+		<!-- <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
+			connectionURL="jdbc:oracle:thin:@172.20.16.***:1521:CARGO" userId="***"
+			password="***" /> -->
+		<!-- mysql -->
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://127.0.0.1:3306/netplus?characterEncoding=utf8" userId="wechat"
+			password="wechat" />	
+		<javaModelGenerator targetPackage="com.net.plus.model"
+			targetProject="console">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		<!-- <javaModelGenerator targetPackage="com.net.plus.model"
+			targetProject="D:/codes/mycodes/netplus/services/console/src/main/java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator> -->
+		
+		<!-- 使用插件的方式 -->
+		<!-- 如果工程名无效,可以尝试D:/codes/mycodes/netplus/services/console/src/main/java -->
+		<sqlMapGenerator targetPackage="sql.mapper"
+			targetProject="console">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<javaClientGenerator targetPackage="com.net.plus.mapper"
+			targetProject="console"
+			type="XMLMAPPER">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+
+		<!-- <table tableName="CTAS_FEE_BASE" domainObjectName="FeeBase"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+			<columnRenamingRule searchString="^D_" replaceString=""/>
+		</table> -->
+		<table tableName="ARTICLE" domainObjectName="Articles"
+			enableCountByExample="true" enableUpdateByExample="true"
+			enableDeleteByExample="true" enableSelectByExample="true"
+			selectByExampleQueryId="true">
+			<columnRenamingRule searchString="^D_" replaceString=""/>
+		</table>
+	</context>
+</generatorConfiguration>
