@@ -4,18 +4,26 @@
 	     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
 	                         http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
 	     version="2.5" >
-	
+	<!-- logback配置 -->
+	<context-param>
+        <param-name>logbackConfigLocation</param-name>
+        <param-value>classpath:/logback.xml</param-value>
+    </context-param>
+	<listener>
+        <listener-class>com.net.plus.util.LogbackConfigListener</listener-class>
+    </listener>
 	<!-- 区分项目名称，防止默认重名 -->
 	<context-param>
-		<param-name>webAppRootKey</param-name>
-		<param-value>maven.example.root</param-value>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath*:/spring/*.xml</param-value>
 	</context-param>
-
-	<!-- Spring的log4j监听器 -->
+	<!-- CONTEXT LOADER LISTENER -->
 	<listener>
-		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-
+	<listener>
+		<listener-class>org.springframework.web.context.ContextCleanupListener</listener-class>
+	</listener>
 	<!-- 字符集 过滤器  -->
 	<filter>
 		<filter-name>CharacterEncodingFilter</filter-name>
@@ -33,6 +41,11 @@
 		<filter-name>CharacterEncodingFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+  
+	<!-- Spring的log4j监听器 -->
+	<listener>
+		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+	</listener>
 
 	<!-- Spring view分发器 -->
 	<servlet>
