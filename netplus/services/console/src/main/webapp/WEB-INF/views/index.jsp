@@ -1,4 +1,5 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
@@ -63,8 +64,8 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Default</a></li>
+            <li class="active"><a href="#">Static top <span class="sr-only">(current)</span></a></li>
             <li><a href="../navbar-fixed-top/">Fixed top</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -91,7 +92,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="plugins/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <!-- <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
   </body>
