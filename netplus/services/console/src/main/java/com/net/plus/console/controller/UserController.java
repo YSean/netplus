@@ -1,9 +1,5 @@
 package com.net.plus.console.controller;
 import java.io.InputStream;
-import java.util.List;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -16,27 +12,35 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StreamUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.net.plus.exception.NetValidationException;
 import com.net.plus.inter.IUserOperation;
-import com.net.plus.model.Article;
+import com.net.plus.model.User;
 
 @Controller
-@RequestMapping("/article")
+@RequestMapping("/user")
 public class UserController {
 	Log log = LogFactory.getLog(UserController.class);
 	
 	@Autowired
 	IUserOperation userMapper;
 	
-	@RequestMapping("/list")
-	public ModelAndView listall(HttpServletRequest request,HttpServletResponse response) throws Exception{
-		List<Article> articles=userMapper.getUserArticles(1); 
-		ModelAndView mav=new ModelAndView("list");
-		mav.addObject("articles",articles);
-		log.info("===============================");
-		send();
-		return mav;
+	@RequestMapping("/login")
+	public String login(
+			@RequestParam(value="username", required=true) String id,
+			@RequestParam(value="password", required=true) String password) throws Exception{
+		User user =userMapper.selectUser(id);
+		if(user==null){
+			throw new NetValidationException("validation.user.unexist");
+		}
+		//需要进行加密之后进行判断
+		if(!password.equals(user.getPassword())){
+			throw new NetValidationException("validation.user.password.error");
+		}
+		//设置到shiro中
+		return "main";
 	}
 	
 	public void send() throws Exception{

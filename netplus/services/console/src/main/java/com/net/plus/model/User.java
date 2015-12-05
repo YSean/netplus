@@ -4,8 +4,10 @@ public class User {
 	
 	private int id;
 	private String userName;
+	private String password;
 	private String userAge;
 	private String userAddress;
+	
 	
 	public int getId() {
 		return id;
@@ -31,5 +33,12 @@ public class User {
 	public void setUserAddress(String userAddress) {
 		this.userAddress = userAddress;
 	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
 
 }
