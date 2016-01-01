@@ -4,7 +4,7 @@
 	<groupId>com.net.plus</groupId>
 	<artifactId>commons-utils</artifactId>
 	<packaging>jar</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>console Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>

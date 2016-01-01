@@ -44,5 +44,4 @@
   <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
      <property name="basePackage" value="com.net.plus.inter" />     
   </bean>
-	
 </beans>

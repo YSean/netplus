@@ -4,12 +4,12 @@
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en">
+<html lang="zh_CN">
 <!--<![endif]-->
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="UTF-8" />
-<title>BCORE Admin Dashboard Template | Dashboard</title>
+<title>微信管理平台</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 <meta content="" name="description" />
 <meta content="" name="author" />
@@ -39,6 +39,13 @@
 	padding-right:10px;
 }
 </style>
+<script>
+	function toMenu(level1,level2){
+		if(level2==null){
+			
+		}
+	}
+</script>
 </head>
 
 <!-- END HEAD -->
@@ -269,13 +276,13 @@
 						</span>
 					</a>
 					<ul class="collapse" id="component-param">
-						<li class=""><a href="javascript:void(0);">
+						<li class=""><a href="javascript:void(0);" onclick="toMenu('param','svrInfo')">
 							<i class="icon-angle-right"></i>公众号参数配置
 						</a></li>
-						<li class=""><a href="javascript:void(0);">
+						<li class=""><a href="javascript:void(0);" onclick="toMenu('param','system')">
 							<i class="icon-angle-right"></i>系统参数
 						</a></li>
-						<li class=""><a href="javascript:void(0);">
+						<li class=""><a href="javascript:void(0);" onclick="toMenu('param','defaultReply')">
 							<i class="icon-angle-right"></i>自动回复
 						</a></li>
 						
