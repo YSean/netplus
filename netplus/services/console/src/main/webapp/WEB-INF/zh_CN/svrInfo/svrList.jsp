@@ -34,6 +34,11 @@
 			$("#form1").attr("action","svrAdd.do");
 			$("#form1").submit();
 		}
+		function mgmtIt(svrSeq){
+			$("#form1").attr("action","svrMgmt.do");
+			$("#svrSeq").val(svrSeq);
+			$("#form1").submit();
+		}
 	</script>
 </head>
 <!-- END HEAD -->

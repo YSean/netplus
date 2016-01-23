@@ -10,4 +10,6 @@ public class Constants {
 	public final static String Failed = "1";
 	//
 	public final static String wechatUrl = "/wechat/Event";
+	
+	public final static String wechatApiCgi = "https://api.weixin.qq.com/cgi-bin/";
 }

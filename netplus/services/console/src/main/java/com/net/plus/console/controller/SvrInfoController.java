@@ -1,8 +1,10 @@
 package com.net.plus.console.controller;
 
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -19,7 +21,9 @@ import com.net.plus.exception.NetValidationException;
 import com.net.plus.mapper.SvrInfoMapper;
 import com.net.plus.model.SvrInfo;
 import com.net.plus.model.SvrInfoExample;
+import com.net.plus.service.HttpClientService;
 import com.net.plus.util.DateUtils;
+import com.net.plus.util.WechatCGI;
 
 @Controller
 @RequestMapping("/svrInfo")
@@ -28,6 +32,22 @@ public class SvrInfoController {
 	Log log = LogFactory.getLog(SvrInfoController.class);
 	@Autowired
 	SvrInfoMapper svrInfoMapper;
+	
+	@Resource(name = "httpService")
+	HttpClientService httpService;;
+	
+	@RequestMapping(value = "svrMgmt.do")
+	public String mgmtSvr(@RequestParam (value="svrSeq",required=true) String svrSeq)
+			throws NetValidationException{
+		SvrInfo svr = svrInfoMapper.selectByPrimaryKey(svrSeq);
+		if(svr==null){
+			throw new NetValidationException("找不到记录");
+		}
+		String url = WechatCGI.buildUrl("token", svr.getAppId(),svr.getAppSecret());
+		Map token = httpService.doGet(url);
+		log.info(token);
+		return "svrInfo/svrMgmt";
+	}
 	
 	@RequestMapping(value = "svrList.do")
 	public ModelAndView getSvrList(HttpServletRequest request,HttpServletResponse response ){

@@ -237,3 +237,228 @@
 410980 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
 410981 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
 410985 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - <==      Total: 0
+703286 [qtp1232306490-43] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+703287 [qtp1232306490-43] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+703290 [qtp1232306490-43] DEBUG c.n.p.m.S.selectByExample - <==      Total: 0
+720107 [qtp1232306490-42] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+720108 [qtp1232306490-42] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+720112 [qtp1232306490-42] DEBUG c.n.p.m.S.selectByExample - <==      Total: 0
+748632 [qtp1232306490-47] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+748633 [qtp1232306490-47] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+748635 [qtp1232306490-47] DEBUG c.n.p.m.S.selectByExample - <==      Total: 0
+771767 [qtp1232306490-45] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+771768 [qtp1232306490-45] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+771771 [qtp1232306490-45] DEBUG c.n.p.m.S.selectByExample - <==      Total: 0
+825189 [qtp1232306490-46] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+825190 [qtp1232306490-46] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+825193 [qtp1232306490-46] DEBUG c.n.p.m.S.selectByExample - <==      Total: 0
+854716 [qtp1232306490-47] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+854717 [qtp1232306490-47] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+854720 [qtp1232306490-47] DEBUG c.n.p.m.S.selectByExample - <==      Total: 0
+13080 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+13132 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+13174 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - <==      Total: 0
+44463 [qtp1232306490-29] DEBUG c.n.p.c.c.SvrInfoController - com.net.plus.model.SvrInfo@4266a24e
+44466 [qtp1232306490-29] DEBUG c.n.p.mapper.SvrInfoMapper.insert - ==>  Preparing: insert into svr_info (SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+44479 [qtp1232306490-29] DEBUG c.n.p.mapper.SvrInfoMapper.insert - ==> Parameters: 577323e7-113d-4347-b872-c442968fb077(String), 0(String), gh_5dbc1217ebdb(String), 时尚摩登坊(String), sxkiler(String), wx124184999da46591(String), 837f130227e2dc2b9b37347c2360d34f(String), null, null, /wechat/Event(String), F(String), null, 2016-01-23 22:50:27.843(Timestamp)
+44490 [qtp1232306490-29] DEBUG c.n.p.mapper.SvrInfoMapper.insert - <==    Updates: 1
+46556 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+46557 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+46591 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+49617 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByPrimaryKey - ==>  Preparing: select SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info where SVR_SEQ = ? 
+49618 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByPrimaryKey - ==> Parameters: (String)
+49621 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByPrimaryKey - <==      Total: 0
+79858 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+79859 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+79868 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+81490 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByPrimaryKey - ==>  Preparing: select SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info where SVR_SEQ = ? 
+81491 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByPrimaryKey - ==> Parameters: 577323e7-113d-4347-b872-c442968fb077(String)
+81495 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByPrimaryKey - <==      Total: 1
+97436 [qtp1232306490-32] ERROR c.n.plus.service.HttpClientService - GET请求出错：{}token?grant_type=client_credential&appid=wx124184999da46591&secret=837f130227e2dc2b9b37347c2360d34f
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "token?grant_type=client_credential&appid=wx124184999da46591&secret=837f130227e2dc2b9b37347c2360d34f":null; nested exception is org.apache.http.client.ClientProtocolException
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:584) ~[spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:529) ~[spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:236) ~[spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at com.net.plus.service.HttpClientService.doGet(HttpClientService.java:67) ~[classes/:na]
+	at com.net.plus.console.controller.SvrInfoController.mgmtSvr(SvrInfoController.java:47) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215) [spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132) [spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:781) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:721) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:943) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:877) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:868) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:755) [javax.servlet.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [javax.servlet.jar:na]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684) [jetty-servlet.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1496) [jetty-servlet.jar:8.1.14.v20131031]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88) [spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1476) [jetty-servlet.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:499) [jetty-servlet.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557) [jetty-security.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:428) [jetty-servlet.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.Server.handle(Server.java:370) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:865) [jetty-http.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240) [jetty-http.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:667) [jetty-io.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52) [jetty-io.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util.jar:8.1.14.v20131031]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_66]
+Caused by: org.apache.http.client.ClientProtocolException: null
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186) ~[httpclient-4.3.5.jar:4.3.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82) ~[httpclient-4.3.5.jar:4.3.5]
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:91) ~[spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:568) ~[spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	... 48 common frames omitted
+Caused by: org.apache.http.ProtocolException: Target host is not specified
+	at org.apache.http.impl.conn.DefaultRoutePlanner.determineRoute(DefaultRoutePlanner.java:69) ~[httpclient-4.3.5.jar:4.3.5]
+	at org.apache.http.impl.client.InternalHttpClient.determineRoute(InternalHttpClient.java:124) ~[httpclient-4.3.5.jar:4.3.5]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:183) ~[httpclient-4.3.5.jar:4.3.5]
+	... 53 common frames omitted
+122797 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+122798 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+122803 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+124279 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByPrimaryKey - ==>  Preparing: select SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info where SVR_SEQ = ? 
+124280 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByPrimaryKey - ==> Parameters: 577323e7-113d-4347-b872-c442968fb077(String)
+124287 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByPrimaryKey - <==      Total: 1
+139623 [qtp1232306490-33] ERROR c.n.plus.service.HttpClientService - GET请求出错：{}token?grant_type=client_credential&appid=wx124184999da46591&secret=837f130227e2dc2b9b37347c2360d34f
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "token?grant_type=client_credential&appid=wx124184999da46591&secret=837f130227e2dc2b9b37347c2360d34f":null; nested exception is org.apache.http.client.ClientProtocolException
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:584) ~[spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:529) ~[spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:236) ~[spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at com.net.plus.service.HttpClientService.doGet(HttpClientService.java:67) ~[classes/:na]
+	at com.net.plus.console.controller.SvrInfoController.mgmtSvr(SvrInfoController.java:47) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215) [spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132) [spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:781) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:721) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:943) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:877) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:868) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:755) [javax.servlet.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [javax.servlet.jar:na]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684) [jetty-servlet.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1496) [jetty-servlet.jar:8.1.14.v20131031]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88) [spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1476) [jetty-servlet.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:499) [jetty-servlet.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557) [jetty-security.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:428) [jetty-servlet.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.Server.handle(Server.java:370) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:865) [jetty-http.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240) [jetty-http.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:667) [jetty-io.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52) [jetty-io.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util.jar:8.1.14.v20131031]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_66]
+Caused by: org.apache.http.client.ClientProtocolException: null
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186) ~[httpclient-4.3.5.jar:4.3.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82) ~[httpclient-4.3.5.jar:4.3.5]
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:91) ~[spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:568) ~[spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	... 48 common frames omitted
+Caused by: org.apache.http.ProtocolException: Target host is not specified
+	at org.apache.http.impl.conn.DefaultRoutePlanner.determineRoute(DefaultRoutePlanner.java:69) ~[httpclient-4.3.5.jar:4.3.5]
+	at org.apache.http.impl.client.InternalHttpClient.determineRoute(InternalHttpClient.java:124) ~[httpclient-4.3.5.jar:4.3.5]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:183) ~[httpclient-4.3.5.jar:4.3.5]
+	... 53 common frames omitted
+11429 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+11486 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+11528 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+15114 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByPrimaryKey - ==>  Preparing: select SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info where SVR_SEQ = ? 
+15115 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByPrimaryKey - ==> Parameters: 577323e7-113d-4347-b872-c442968fb077(String)
+15121 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByPrimaryKey - <==      Total: 1
+234010 [qtp1232306490-34] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+234010 [qtp1232306490-34] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+234016 [qtp1232306490-34] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+235715 [qtp1232306490-34] INFO  c.n.p.c.c.SvrInfoController - svr change State577323e7-113d-4347-b872-c442968fb077
+235718 [qtp1232306490-34] DEBUG c.n.p.m.S.selectByPrimaryKey - ==>  Preparing: select SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info where SVR_SEQ = ? 
+235719 [qtp1232306490-34] DEBUG c.n.p.m.S.selectByPrimaryKey - ==> Parameters: 577323e7-113d-4347-b872-c442968fb077(String)
+235725 [qtp1232306490-34] DEBUG c.n.p.m.S.selectByPrimaryKey - <==      Total: 1
+272505 [qtp1232306490-34] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+272507 [qtp1232306490-34] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+272513 [qtp1232306490-34] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+274287 [qtp1232306490-34] INFO  c.n.p.c.c.SvrInfoController - svr change State577323e7-113d-4347-b872-c442968fb077
+274290 [qtp1232306490-34] DEBUG c.n.p.m.S.selectByPrimaryKey - ==>  Preparing: select SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info where SVR_SEQ = ? 
+274291 [qtp1232306490-34] DEBUG c.n.p.m.S.selectByPrimaryKey - ==> Parameters: 577323e7-113d-4347-b872-c442968fb077(String)
+274295 [qtp1232306490-34] DEBUG c.n.p.m.S.selectByPrimaryKey - <==      Total: 1
+281322 [qtp1232306490-34] DEBUG c.n.p.c.c.SvrInfoController - com.net.plus.model.SvrInfo@54444853
+355360 [qtp1232306490-36] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+355361 [qtp1232306490-36] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+355370 [qtp1232306490-36] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+357303 [qtp1232306490-36] INFO  c.n.p.c.c.SvrInfoController - svr change State577323e7-113d-4347-b872-c442968fb077
+357306 [qtp1232306490-36] DEBUG c.n.p.m.S.selectByPrimaryKey - ==>  Preparing: select SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info where SVR_SEQ = ? 
+357307 [qtp1232306490-36] DEBUG c.n.p.m.S.selectByPrimaryKey - ==> Parameters: 577323e7-113d-4347-b872-c442968fb077(String)
+357313 [qtp1232306490-36] DEBUG c.n.p.m.S.selectByPrimaryKey - <==      Total: 1
+414309 [qtp1232306490-37] DEBUG c.n.p.c.c.SvrInfoController - com.net.plus.model.SvrInfo@23c1701e
+453163 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+453164 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+453169 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+454549 [qtp1232306490-37] INFO  c.n.p.c.c.SvrInfoController - svr change State577323e7-113d-4347-b872-c442968fb077
+454552 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByPrimaryKey - ==>  Preparing: select SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info where SVR_SEQ = ? 
+454552 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByPrimaryKey - ==> Parameters: 577323e7-113d-4347-b872-c442968fb077(String)
+454557 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByPrimaryKey - <==      Total: 1
+483300 [qtp1232306490-37] DEBUG c.n.p.c.c.SvrInfoController - com.net.plus.model.SvrInfo@34262a3e
+487000 [qtp1232306490-37] DEBUG c.n.p.m.S.updateByPrimaryKeySelective - ==>  Preparing: update svr_info SET STATE = ?, svr_NAME = ?, TOKEN = ?, APP_ID = ?, APP_SECRET = ?, SVR_TYPE = ?, ENCODEING_AESKEY = ? where SVR_SEQ = ? 
+487007 [qtp1232306490-37] DEBUG c.n.p.m.S.updateByPrimaryKeySelective - ==> Parameters: 0(String), 时尚摩登坊(String), sxkiler(String), wx124184999da46591(String), 0a56a212188975ce4a6cd9066d85f987(String), F(String), (String), 577323e7-113d-4347-b872-c442968fb077(String)
+487016 [qtp1232306490-37] DEBUG c.n.p.m.S.updateByPrimaryKeySelective - <==    Updates: 1
+491493 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+491493 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+491497 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+494111 [qtp1232306490-37] INFO  c.n.p.c.c.SvrInfoController - svr change State577323e7-113d-4347-b872-c442968fb077
+494113 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByPrimaryKey - ==>  Preparing: select SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info where SVR_SEQ = ? 
+494114 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByPrimaryKey - ==> Parameters: 577323e7-113d-4347-b872-c442968fb077(String)
+494117 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByPrimaryKey - <==      Total: 1
+496341 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+496341 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+496347 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+497560 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByPrimaryKey - ==>  Preparing: select SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info where SVR_SEQ = ? 
+497561 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByPrimaryKey - ==> Parameters: 577323e7-113d-4347-b872-c442968fb077(String)
+497565 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByPrimaryKey - <==      Total: 1
+505356 [qtp1232306490-37] INFO  c.n.p.c.c.SvrInfoController - {access_token=HmKH3efZ4HFRCapSH5Te6zOoMjen0PGlpmY3kT8_Db7sI7I1bMQ8pUyjlSsedFm0XyGV6qRiZnhOvx_rnVyRF5ETGZgenNvFvrA4gQvpeEEGEFjAFAMKL, expires_in=7200}

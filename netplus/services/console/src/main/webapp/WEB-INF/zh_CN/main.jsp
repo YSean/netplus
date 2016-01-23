@@ -325,7 +325,7 @@
 
 		<!--PAGE CONTENT -->
 		<div id="content">
-			<iframe id="targetFrame" src="welcome.do" style="width:100%;min-height:600px;height:100%;padding-top:10px;overflow-x:hidden;overflow-y:auto; "></iframe>
+			<iframe id="targetFrame" src="welcome.do" style="width:100%;min-height:500px;padding-top:10px;overflow-x:hidden;overflow-y:hidden; "></iframe>
 		</div>
 		<!--END PAGE CONTENT -->
 	</div>
