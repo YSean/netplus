@@ -53,7 +53,7 @@
 			selectByExampleQueryId="false">
 			<columnRenamingRule searchString="^D_" replaceString=""/>
 		</table> -->
-		<table tableName="ARTICLE" domainObjectName="Articles"
+		<table tableName="SVR_INFO" domainObjectName="SvrInfo"
 			enableCountByExample="true" enableUpdateByExample="true"
 			enableDeleteByExample="true" enableSelectByExample="true"
 			selectByExampleQueryId="true">

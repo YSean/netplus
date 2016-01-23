@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.net.plus.exception.NetValidationException;
-import com.net.plus.inter.IUserOperation;
+import com.net.plus.mapper.IUserOperation;
 import com.net.plus.model.User;
 
 @Controller

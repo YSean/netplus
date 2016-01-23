@@ -209,7 +209,7 @@ body.padTop44 {
 }
 .side-right #content {
   margin-left: 0;
-  margin-right: 220px;
+  margin-right: 0px;
   -webkit-transition: margin-right 0.2s;
   -moz-transition: margin-right 0.2s;
   -o-transition: margin-right 0.2s;

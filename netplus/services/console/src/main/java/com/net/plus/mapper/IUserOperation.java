@@ -1,4 +1,4 @@
-package com.net.plus.inter;
+package com.net.plus.mapper;
 
 import java.util.List;
 

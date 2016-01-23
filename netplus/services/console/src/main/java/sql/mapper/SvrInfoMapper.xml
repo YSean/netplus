@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.net.plus.mapper.SvrInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.net.plus.model.SvrInfo" >
+    <id column="SVR_SEQ" property="svrSeq" jdbcType="VARCHAR" />
+    <result column="STATE" property="state" jdbcType="CHAR" />
+    <result column="SVR_ID" property="svrId" jdbcType="VARCHAR" />
+    <result column="svr_NAME" property="svrName" jdbcType="VARCHAR" />
+    <result column="TOKEN" property="token" jdbcType="VARCHAR" />
+    <result column="APP_ID" property="appId" jdbcType="VARCHAR" />
+    <result column="APP_SECRET" property="appSecret" jdbcType="VARCHAR" />
+    <result column="ACCESS_TOKEN" property="accessToken" jdbcType="VARCHAR" />
+    <result column="URL_SEND" property="urlSend" jdbcType="VARCHAR" />
+    <result column="URL_RECV" property="urlRecv" jdbcType="VARCHAR" />
+    <result column="SVR_TYPE" property="svrType" jdbcType="CHAR" />
+    <result column="ENCODEING_AESKEY" property="encodeingAeskey" jdbcType="VARCHAR" />
+    <result column="CTIME" property="ctime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, 
+    URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.net.plus.model.SvrInfoExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from svr_info
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from svr_info
+    where SVR_SEQ = #{svrSeq,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from svr_info
+    where SVR_SEQ = #{svrSeq,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.net.plus.model.SvrInfoExample" >
+    delete from svr_info
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.net.plus.model.SvrInfo" >
+    insert into svr_info (SVR_SEQ, STATE, SVR_ID, 
+      svr_NAME, TOKEN, APP_ID, 
+      APP_SECRET, ACCESS_TOKEN, URL_SEND, 
+      URL_RECV, SVR_TYPE, ENCODEING_AESKEY, 
+      CTIME)
+    values (#{svrSeq,jdbcType=VARCHAR}, #{state,jdbcType=CHAR}, #{svrId,jdbcType=VARCHAR}, 
+      #{svrName,jdbcType=VARCHAR}, #{token,jdbcType=VARCHAR}, #{appId,jdbcType=VARCHAR}, 
+      #{appSecret,jdbcType=VARCHAR}, #{accessToken,jdbcType=VARCHAR}, #{urlSend,jdbcType=VARCHAR}, 
+      #{urlRecv,jdbcType=VARCHAR}, #{svrType,jdbcType=CHAR}, #{encodeingAeskey,jdbcType=VARCHAR}, 
+      #{ctime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.net.plus.model.SvrInfo" >
+    insert into svr_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="svrSeq != null" >
+        SVR_SEQ,
+      </if>
+      <if test="state != null" >
+        STATE,
+      </if>
+      <if test="svrId != null" >
+        SVR_ID,
+      </if>
+      <if test="svrName != null" >
+        svr_NAME,
+      </if>
+      <if test="token != null" >
+        TOKEN,
+      </if>
+      <if test="appId != null" >
+        APP_ID,
+      </if>
+      <if test="appSecret != null" >
+        APP_SECRET,
+      </if>
+      <if test="accessToken != null" >
+        ACCESS_TOKEN,
+      </if>
+      <if test="urlSend != null" >
+        URL_SEND,
+      </if>
+      <if test="urlRecv != null" >
+        URL_RECV,
+      </if>
+      <if test="svrType != null" >
+        SVR_TYPE,
+      </if>
+      <if test="encodeingAeskey != null" >
+        ENCODEING_AESKEY,
+      </if>
+      <if test="ctime != null" >
+        CTIME,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="svrSeq != null" >
+        #{svrSeq,jdbcType=VARCHAR},
+      </if>
+      <if test="state != null" >
+        #{state,jdbcType=CHAR},
+      </if>
+      <if test="svrId != null" >
+        #{svrId,jdbcType=VARCHAR},
+      </if>
+      <if test="svrName != null" >
+        #{svrName,jdbcType=VARCHAR},
+      </if>
+      <if test="token != null" >
+        #{token,jdbcType=VARCHAR},
+      </if>
+      <if test="appId != null" >
+        #{appId,jdbcType=VARCHAR},
+      </if>
+      <if test="appSecret != null" >
+        #{appSecret,jdbcType=VARCHAR},
+      </if>
+      <if test="accessToken != null" >
+        #{accessToken,jdbcType=VARCHAR},
+      </if>
+      <if test="urlSend != null" >
+        #{urlSend,jdbcType=VARCHAR},
+      </if>
+      <if test="urlRecv != null" >
+        #{urlRecv,jdbcType=VARCHAR},
+      </if>
+      <if test="svrType != null" >
+        #{svrType,jdbcType=CHAR},
+      </if>
+      <if test="encodeingAeskey != null" >
+        #{encodeingAeskey,jdbcType=VARCHAR},
+      </if>
+      <if test="ctime != null" >
+        #{ctime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.net.plus.model.SvrInfoExample" resultType="java.lang.Integer" >
+    select count(*) from svr_info
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update svr_info
+    <set >
+      <if test="record.svrSeq != null" >
+        SVR_SEQ = #{record.svrSeq,jdbcType=VARCHAR},
+      </if>
+      <if test="record.state != null" >
+        STATE = #{record.state,jdbcType=CHAR},
+      </if>
+      <if test="record.svrId != null" >
+        SVR_ID = #{record.svrId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.svrName != null" >
+        svr_NAME = #{record.svrName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.token != null" >
+        TOKEN = #{record.token,jdbcType=VARCHAR},
+      </if>
+      <if test="record.appId != null" >
+        APP_ID = #{record.appId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.appSecret != null" >
+        APP_SECRET = #{record.appSecret,jdbcType=VARCHAR},
+      </if>
+      <if test="record.accessToken != null" >
+        ACCESS_TOKEN = #{record.accessToken,jdbcType=VARCHAR},
+      </if>
+      <if test="record.urlSend != null" >
+        URL_SEND = #{record.urlSend,jdbcType=VARCHAR},
+      </if>
+      <if test="record.urlRecv != null" >
+        URL_RECV = #{record.urlRecv,jdbcType=VARCHAR},
+      </if>
+      <if test="record.svrType != null" >
+        SVR_TYPE = #{record.svrType,jdbcType=CHAR},
+      </if>
+      <if test="record.encodeingAeskey != null" >
+        ENCODEING_AESKEY = #{record.encodeingAeskey,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ctime != null" >
+        CTIME = #{record.ctime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update svr_info
+    set SVR_SEQ = #{record.svrSeq,jdbcType=VARCHAR},
+      STATE = #{record.state,jdbcType=CHAR},
+      SVR_ID = #{record.svrId,jdbcType=VARCHAR},
+      svr_NAME = #{record.svrName,jdbcType=VARCHAR},
+      TOKEN = #{record.token,jdbcType=VARCHAR},
+      APP_ID = #{record.appId,jdbcType=VARCHAR},
+      APP_SECRET = #{record.appSecret,jdbcType=VARCHAR},
+      ACCESS_TOKEN = #{record.accessToken,jdbcType=VARCHAR},
+      URL_SEND = #{record.urlSend,jdbcType=VARCHAR},
+      URL_RECV = #{record.urlRecv,jdbcType=VARCHAR},
+      SVR_TYPE = #{record.svrType,jdbcType=CHAR},
+      ENCODEING_AESKEY = #{record.encodeingAeskey,jdbcType=VARCHAR},
+      CTIME = #{record.ctime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.net.plus.model.SvrInfo" >
+    update svr_info
+    <set >
+      <if test="state != null" >
+        STATE = #{state,jdbcType=CHAR},
+      </if>
+      <if test="svrId != null" >
+        SVR_ID = #{svrId,jdbcType=VARCHAR},
+      </if>
+      <if test="svrName != null" >
+        svr_NAME = #{svrName,jdbcType=VARCHAR},
+      </if>
+      <if test="token != null" >
+        TOKEN = #{token,jdbcType=VARCHAR},
+      </if>
+      <if test="appId != null" >
+        APP_ID = #{appId,jdbcType=VARCHAR},
+      </if>
+      <if test="appSecret != null" >
+        APP_SECRET = #{appSecret,jdbcType=VARCHAR},
+      </if>
+      <if test="accessToken != null" >
+        ACCESS_TOKEN = #{accessToken,jdbcType=VARCHAR},
+      </if>
+      <if test="urlSend != null" >
+        URL_SEND = #{urlSend,jdbcType=VARCHAR},
+      </if>
+      <if test="urlRecv != null" >
+        URL_RECV = #{urlRecv,jdbcType=VARCHAR},
+      </if>
+      <if test="svrType != null" >
+        SVR_TYPE = #{svrType,jdbcType=CHAR},
+      </if>
+      <if test="encodeingAeskey != null" >
+        ENCODEING_AESKEY = #{encodeingAeskey,jdbcType=VARCHAR},
+      </if>
+      <if test="ctime != null" >
+        CTIME = #{ctime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where SVR_SEQ = #{svrSeq,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.net.plus.model.SvrInfo" >
+    update svr_info
+    set STATE = #{state,jdbcType=CHAR},
+      SVR_ID = #{svrId,jdbcType=VARCHAR},
+      svr_NAME = #{svrName,jdbcType=VARCHAR},
+      TOKEN = #{token,jdbcType=VARCHAR},
+      APP_ID = #{appId,jdbcType=VARCHAR},
+      APP_SECRET = #{appSecret,jdbcType=VARCHAR},
+      ACCESS_TOKEN = #{accessToken,jdbcType=VARCHAR},
+      URL_SEND = #{urlSend,jdbcType=VARCHAR},
+      URL_RECV = #{urlRecv,jdbcType=VARCHAR},
+      SVR_TYPE = #{svrType,jdbcType=CHAR},
+      ENCODEING_AESKEY = #{encodeingAeskey,jdbcType=VARCHAR},
+      CTIME = #{ctime,jdbcType=TIMESTAMP}
+    where SVR_SEQ = #{svrSeq,jdbcType=VARCHAR}
+  </update>
+</mapper>

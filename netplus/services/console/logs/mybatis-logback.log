@@ -1,0 +1,239 @@
+39957 [qtp1232306490-30] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+40017 [qtp1232306490-30] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+40059 [qtp1232306490-30] DEBUG c.n.p.m.S.selectByExample - <==      Total: 0
+110967 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+110968 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+110972 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - <==      Total: 0
+314753 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+314754 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+314764 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - <==      Total: 0
+316324 [qtp1232306490-39] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+316325 [qtp1232306490-39] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+316326 [qtp1232306490-39] DEBUG c.n.p.m.S.selectByExample - <==      Total: 0
+371858 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+371861 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+371864 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - <==      Total: 0
+421753 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+421754 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+421756 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - <==      Total: 0
+485151 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+485152 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+485165 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+487002 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+487003 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+487007 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+487955 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+487955 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+487959 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+496928 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+496928 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+496930 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+583606 [qtp1232306490-39] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+583607 [qtp1232306490-39] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+583610 [qtp1232306490-39] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+585741 [qtp1232306490-39] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+585742 [qtp1232306490-39] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+585746 [qtp1232306490-39] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+585949 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+585950 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+585952 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+586208 [qtp1232306490-39] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+586208 [qtp1232306490-39] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+586210 [qtp1232306490-39] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+586374 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+586374 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+586379 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+14954 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+15011 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+15051 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+28138 [qtp1232306490-31] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+28172 [qtp1232306490-31] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+28203 [qtp1232306490-31] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+96125 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+96126 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+96137 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+176401 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+176402 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+176404 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+195218 [qtp1232306490-30] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+195219 [qtp1232306490-30] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+195226 [qtp1232306490-30] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+203925 [qtp1232306490-30] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+203927 [qtp1232306490-30] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+203935 [qtp1232306490-30] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+213413 [qtp1232306490-30] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+213415 [qtp1232306490-30] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+213421 [qtp1232306490-30] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+267334 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+267335 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+267337 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+283546 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+283547 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+283552 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+353168 [qtp1232306490-30] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+353168 [qtp1232306490-30] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+353170 [qtp1232306490-30] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+370444 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+370445 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+370447 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+388156 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+388158 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+388164 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+406607 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+406607 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+406612 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+444738 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+444739 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+444743 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+447511 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+447512 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+447514 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+451222 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+451222 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+451226 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+468858 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+468859 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+468866 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+470297 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+470297 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+470301 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+473997 [qtp1232306490-42] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+473997 [qtp1232306490-42] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+474001 [qtp1232306490-42] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+476066 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+476066 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+476073 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+513963 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+513963 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+513965 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+544023 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+544023 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+544025 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+587081 [qtp1232306490-42] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+587081 [qtp1232306490-42] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+587083 [qtp1232306490-42] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+589734 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+589735 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+589741 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+592116 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+592116 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+592118 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+593999 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, ID, NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+593999 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+594001 [qtp1232306490-41] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+26566 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+26622 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+26660 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+83743 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+83743 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+83748 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+86125 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+86126 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+86136 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+88416 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+88417 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+88421 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+11270 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+11325 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+11370 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+28796 [qtp1232306490-32] DEBUG c.n.p.c.c.SvrInfoController - com.net.plus.model.SvrInfo@4f9aa0c
+11529 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+11578 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+11611 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+27757 [qtp1232306490-29] DEBUG c.n.p.c.c.SvrInfoController - com.net.plus.model.SvrInfo@40d4306f
+27760 [qtp1232306490-29] DEBUG c.n.p.mapper.SvrInfoMapper.insert - ==>  Preparing: insert into svr_info (SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+27785 [qtp1232306490-29] DEBUG c.n.p.mapper.SvrInfoMapper.insert - ==> Parameters: 9ae13dee-8e5c-40eb-9118-002444bac21d(String), 0(String), dsfdfasdf(String), dsfdfasdf(String), dsfdfasdf(String), dsfdfasdf(String), dsfdfasdf(String), null, null, /wechat/Event(String), null, null, 2016-01-23 20:42:08.716(Timestamp)
+27801 [qtp1232306490-29] DEBUG c.n.p.mapper.SvrInfoMapper.insert - <==    Updates: 1
+138544 [qtp1232306490-34] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+138545 [qtp1232306490-34] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+138547 [qtp1232306490-34] DEBUG c.n.p.m.S.selectByExample - <==      Total: 0
+317113 [qtp1232306490-38] DEBUG c.n.p.c.c.SvrInfoController - com.net.plus.model.SvrInfo@ac7530c
+317116 [qtp1232306490-38] DEBUG c.n.p.mapper.SvrInfoMapper.insert - ==>  Preparing: insert into svr_info (SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+317131 [qtp1232306490-38] DEBUG c.n.p.mapper.SvrInfoMapper.insert - ==> Parameters: 92751120-91f3-42a5-8f06-f815a60f24ad(String), 0(String), gh_5dbc1217ebdb(String), 时尚摩登坊(String), sxkiler(String), wx124184999da46591(String), 837f130227e2dc2b9b37347c2360d34f(String), null, null, /wechat/Event(String), null, null, 2016-01-23 20:46:58.072(Timestamp)
+317140 [qtp1232306490-38] DEBUG c.n.p.mapper.SvrInfoMapper.insert - <==    Updates: 1
+325826 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+325826 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+325838 [qtp1232306490-38] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+16256 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+16305 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+16340 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+19890 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+19891 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+19900 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+57438 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+57439 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+57443 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+129379 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+129380 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+129385 [qtp1232306490-33] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+152210 [qtp1232306490-36] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+152212 [qtp1232306490-36] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+152218 [qtp1232306490-36] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+186969 [qtp1232306490-36] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+186970 [qtp1232306490-36] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+186975 [qtp1232306490-36] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+189574 [qtp1232306490-37] DEBUG c.n.p.c.c.SvrInfoController - closeSvrSeq92751120-91f3-42a5-8f06-f815a60f24ad
+189661 [qtp1232306490-37] DEBUG c.n.p.m.S.updateByExampleSelective - ==>  Preparing: update svr_info SET STATE = ? WHERE ( SVR_SEQ = ? ) 
+189662 [qtp1232306490-37] DEBUG c.n.p.m.S.updateByExampleSelective - ==> Parameters: 1(String), 92751120-91f3-42a5-8f06-f815a60f24ad(String)
+189668 [qtp1232306490-37] DEBUG c.n.p.m.S.updateByExampleSelective - <==    Updates: 1
+193100 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+193102 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+193106 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+14493 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+14556 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+14588 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+18274 [qtp1232306490-32] DEBUG c.n.p.c.c.SvrInfoController - closeSvrSeq92751120-91f3-42a5-8f06-f815a60f24ad
+18390 [qtp1232306490-32] DEBUG c.n.p.m.S.updateByExampleSelective - ==>  Preparing: update svr_info SET STATE = ? WHERE ( SVR_SEQ = ? ) 
+18391 [qtp1232306490-32] DEBUG c.n.p.m.S.updateByExampleSelective - ==> Parameters: 0(String), 92751120-91f3-42a5-8f06-f815a60f24ad(String)
+18400 [qtp1232306490-32] DEBUG c.n.p.m.S.updateByExampleSelective - <==    Updates: 1
+20515 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+20516 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+20523 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+21899 [qtp1232306490-32] DEBUG c.n.p.c.c.SvrInfoController - closeSvrSeq92751120-91f3-42a5-8f06-f815a60f24ad
+21903 [qtp1232306490-32] DEBUG c.n.p.m.S.updateByExampleSelective - ==>  Preparing: update svr_info SET STATE = ? WHERE ( SVR_SEQ = ? ) 
+21905 [qtp1232306490-32] DEBUG c.n.p.m.S.updateByExampleSelective - ==> Parameters: 1(String), 92751120-91f3-42a5-8f06-f815a60f24ad(String)
+21911 [qtp1232306490-32] DEBUG c.n.p.m.S.updateByExampleSelective - <==    Updates: 1
+22777 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+22777 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+22781 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+24433 [qtp1232306490-32] DEBUG c.n.p.c.c.SvrInfoController - closeSvrSeq92751120-91f3-42a5-8f06-f815a60f24ad
+24438 [qtp1232306490-32] DEBUG c.n.p.m.S.updateByExampleSelective - ==>  Preparing: update svr_info SET STATE = ? WHERE ( SVR_SEQ = ? ) 
+24439 [qtp1232306490-32] DEBUG c.n.p.m.S.updateByExampleSelective - ==> Parameters: 0(String), 92751120-91f3-42a5-8f06-f815a60f24ad(String)
+24450 [qtp1232306490-32] DEBUG c.n.p.m.S.updateByExampleSelective - <==    Updates: 1
+26575 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+26576 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+26582 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+93576 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+93576 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+93579 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+132448 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+132449 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+132453 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+221010 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+221010 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+221015 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+255945 [qtp1232306490-35] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+255946 [qtp1232306490-35] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+255953 [qtp1232306490-35] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+376078 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+376078 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+376087 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+394436 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+394437 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+394441 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+49232 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+49285 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+49327 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+59186 [qtp1232306490-29] INFO  c.n.p.c.c.SvrInfoController - del Svr Info92751120-91f3-42a5-8f06-f815a60f24ad
+59188 [qtp1232306490-29] DEBUG c.n.p.m.S.deleteByPrimaryKey - ==>  Preparing: delete from svr_info where SVR_SEQ = ? 
+59189 [qtp1232306490-29] DEBUG c.n.p.m.S.deleteByPrimaryKey - ==> Parameters: 92751120-91f3-42a5-8f06-f815a60f24ad(String)
+59203 [qtp1232306490-29] DEBUG c.n.p.m.S.deleteByPrimaryKey - <==    Updates: 1
+61014 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+61017 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+61020 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - <==      Total: 0
+124528 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+124529 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+124536 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - <==      Total: 0
+410980 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+410981 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+410985 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByExample - <==      Total: 0

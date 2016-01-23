@@ -17,17 +17,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
 <!-- GLOBAL STYLES -->
-<link rel="stylesheet" href="plugins/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
-<link rel="stylesheet" href="assets/css/main.css" />
-<link rel="stylesheet" href="assets/css/theme.css" />
-<link rel="stylesheet" href="assets/css/MoneAdmin.css" />
-<link rel="stylesheet" href="plugins/Font-Awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="/console/plugins/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/console/assets/css/main.css" />
+<link rel="stylesheet" href="/console/assets/css/MoneAdmin.css" />
+<link rel="stylesheet" href="/console/plugins/Font-Awesome/css/font-awesome.css" />
 <!--END GLOBAL STYLES -->
 
 <!-- PAGE LEVEL STYLES -->
-<link href="assets/css/layout2.css" rel="stylesheet" />
-<link href="plugins/flot/examples/examples.css" rel="stylesheet" />
-<link rel="stylesheet" href="plugins/timeline/timeline.css" />
+<link href="/console/assets/css/layout2.css" rel="stylesheet" />
 <!-- END PAGE LEVEL  STYLES -->
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -35,14 +32,16 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 <style>
-.icon-table,.icon-tasks,.icon-angle-right{
-	padding-right:10px;
+.icon-table, .icon-tasks, .icon-angle-right {
+	padding-right: 10px;
 }
 </style>
 <script>
-	function toMenu(level1,level2){
-		if(level2==null){
-			
+	function toMenu(level1, level2) {
+		if (level2 == null) {
+			$("#targetFrame").attr("src",level1+".do");
+		}else{
+			$("#targetFrame").attr("src",level1+"/"+level2+".do");
 		}
 	}
 </script>
@@ -52,14 +51,10 @@
 
 <!-- BEGIN BODY -->
 <body class="padTop53 ">
-
 	<!-- MAIN WRAPPER -->
 	<div id="wrap">
-
-
 		<!-- HEADER SECTION -->
 		<div id="top">
-
 			<nav class="navbar navbar-inverse navbar-fixed-top " style="padding-top: 10px;">
 				<a data-original-title="Show/Hide Menu" data-placement="bottom" data-tooltip="tooltip"
 					class="accordion-toggle btn btn-primary btn-sm visible-xs" data-toggle="collapse" href="#menu" id="menu-toggle">
@@ -67,7 +62,6 @@
 				</a>
 				<!-- LOGO SECTION -->
 				<header class="navbar-header">
-
 					<a href="index.html" class="navbar-brand"> <!-- Logo_view --> <img src="assets/img/logo.png" alt="" />
 					</a>
 				</header>
@@ -253,7 +247,7 @@
 		<div id="left">
 			<div class="media user-media well-small">
 				<a class="user-link" href="#"> <img class="media-object img-thumbnail user-img" alt="User Picture"
-					src="assets/img/user.gif" />
+						src="assets/img/user.gif" />
 				</a> <br />
 				<div class="media-body">
 					<h5 class="media-heading">Joe Romlin</h5>
@@ -268,130 +262,72 @@
 			<!-- Menu_View -->
 			<ul id="menu" class="collapse">
 				<li class="panel ">
-					<a href="#" data-parent="#menu" data-toggle="collapse" 
-						class="accordion-toggle" data-target="#component-param"> 
-						<i class="icon-tasks"> </i>参数管理
+					<a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle"
+						data-target="#component-param"> 
+						<i class="icon-tasks"> </i>参数管理 
 						<span class="pull-right"> 
 							<i class="icon-angle-left"></i>
 						</span>
 					</a>
 					<ul class="collapse" id="component-param">
-						<li class=""><a href="javascript:void(0);" onclick="toMenu('param','svrInfo')">
-							<i class="icon-angle-right"></i>公众号参数配置
+						<li class="">
+						<a href="javascript:void(0);" onclick="toMenu('svrInfo','svrList')"> <i
+								class="icon-angle-right"></i>公众号参数配置
 						</a></li>
-						<li class=""><a href="javascript:void(0);" onclick="toMenu('param','system')">
-							<i class="icon-angle-right"></i>系统参数
+						<li class="">
+						<a href="javascript:void(0);" onclick="toMenu('svrInfo','system')"> <i
+								class="icon-angle-right"></i>系统参数
 						</a></li>
-						<li class=""><a href="javascript:void(0);" onclick="toMenu('param','defaultReply')">
-							<i class="icon-angle-right"></i>自动回复
+						<li class="">
+						<a href="javascript:void(0);" onclick="toMenu('svrInfo','defaultReply')"> <i
+								class="icon-angle-right"></i>自动回复
 						</a></li>
-						
 					</ul>
 				</li>
 				<li class="panel">
-					<a href="#" data-parent="#menu" data-toggle="collapse" 
-						class="accordion-toggle" data-target="#component-base"> 
-						<i class="icon-tasks"> </i>基础功能
-						<span class="pull-right"> 
-							<i class="icon-angle-left"></i>
+					<a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle"
+						data-target="#component-base"> <i class="icon-tasks"> </i>基础功能 <span class="pull-right"> <i
+								class="icon-angle-left"></i>
 						</span>
 					</a>
 					<ul class="collapse" id="component-base">
-						<li class=""><a href="javascript:void(0);">
-							<i class="icon-angle-right"></i>消息管理
+						<li class=""><a href="javascript:void(0);"> <i class="icon-angle-right"></i>消息管理
 						</a></li>
-						<li class=""><a href="javascript:void(0);">
-							<i class="icon-angle-right"></i>用户管理
+						<li class=""><a href="javascript:void(0);"> <i class="icon-angle-right"></i>用户管理
 						</a></li>
-						<li class=""><a href="javascript:void(0);">
-							<i class="icon-angle-right"></i>菜单管理
+						<li class=""><a href="javascript:void(0);"> <i class="icon-angle-right"></i>菜单管理
 						</a></li>
-						<li class=""><a href="javascript:void(0);">
-							<i class="icon-angle-right"></i>素材管理
+						<li class=""><a href="javascript:void(0);"> <i class="icon-angle-right"></i>素材管理
 						</a></li>
-						<li class=""><a href="javascript:void(0);">
-							<i class="icon-angle-right"></i>关键字管理
+						<li class=""><a href="javascript:void(0);"> <i class="icon-angle-right"></i>关键字管理
 						</a></li>
-					</ul>
-				</li>
-				<li class="panel">
-					<a href="#" data-parent="#menu" data-toggle="collapse" 
-						class="accordion-toggle" data-target="#component-busi"> 
-						<i class="icon-tasks"> </i>营销管理
-						<span class="pull-right"> 
-							<i class="icon-angle-left"></i>
-						</span>
-					</a>
+					</ul></li>
+				<li class="panel"><a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle"
+					data-target="#component-busi"> <i class="icon-tasks"> </i>营销管理 <span class="pull-right"> <i
+							class="icon-angle-left"></i>
+					</span>
+				</a>
 					<ul class="collapse" id="component-busi">
-						<li class=""><a href="javascript:void(0);">
-							<i class="icon-angle-right"></i>专题维护
+						<li class=""><a href="javascript:void(0);"> <i class="icon-angle-right"></i>专题维护
 						</a></li>
-						<li class=""><a href="javascript:void(0);">
-							<i class="icon-angle-right"></i>广告主
+						<li class=""><a href="javascript:void(0);"> <i class="icon-angle-right"></i>广告主
 						</a></li>
-						<li class=""><a href="javascript:void(0);">
-							<i class="icon-angle-right"></i>流量主
+						<li class=""><a href="javascript:void(0);"> <i class="icon-angle-right"></i>流量主
 						</a></li>
-						<li class=""><a href="javascript:void(0);">
-							<i class="icon-angle-right"></i>发布活动
+						<li class=""><a href="javascript:void(0);"> <i class="icon-angle-right"></i>发布活动
 						</a></li>
-						<li class=""><a href="javascript:void(0);">
-							<i class="icon-angle-right"></i>投票管理
+						<li class=""><a href="javascript:void(0);"> <i class="icon-angle-right"></i>投票管理
 						</a></li>
-					</ul>
-				</li>
+					</ul></li>
 			</ul>
 		</div>
 		<!--END MENU SECTION -->
 
 		<!--PAGE CONTENT -->
 		<div id="content">
-			<iframe></iframe>
+			<iframe id="targetFrame" src="welcome.do" style="width:100%;min-height:600px;height:100%;padding-top:10px;overflow-x:hidden;overflow-y:auto; "></iframe>
 		</div>
 		<!--END PAGE CONTENT -->
-
-		<!-- RIGHT STRIP  SECTION -->
-		<div id="right" style="display:none;">
-			<div class="well well-small">
-				<ul class="list-unstyled">
-					<li>Visitor &nbsp; : <span>23,000</span></li>
-					<li>Users &nbsp; : <span>53,000</span></li>
-					<li>Registrations &nbsp; : <span>3,000</span></li>
-				</ul>
-			</div>
-			<div class="well well-small">
-				<button class="btn btn-block">Help</button>
-				<button class="btn btn-primary btn-block">Tickets</button>
-				<button class="btn btn-info btn-block">New</button>
-				<button class="btn btn-success btn-block">Users</button>
-				<button class="btn btn-danger btn-block">Profit</button>
-				<button class="btn btn-warning btn-block">Sales</button>
-				<button class="btn btn-inverse btn-block">Stock</button>
-			</div>
-			<div class="well well-small">
-				<span>Profit</span><span class="pull-right"><small>20%</small></span>
-
-				<div class="progress mini">
-					<div class="progress-bar progress-bar-info" style="width: 20%"></div>
-				</div>
-				<span>Sales</span><span class="pull-right"><small>40%</small></span>
-
-				<div class="progress mini">
-					<div class="progress-bar progress-bar-success" style="width: 40%"></div>
-				</div>
-				<span>Pending</span><span class="pull-right"><small>60%</small></span>
-
-				<div class="progress mini">
-					<div class="progress-bar progress-bar-warning" style="width: 60%"></div>
-				</div>
-				<span>Summary</span><span class="pull-right"><small>80%</small></span>
-
-				<div class="progress mini">
-					<div class="progress-bar progress-bar-danger" style="width: 80%"></div>
-				</div>
-			</div>
-		</div>
-		<!-- END RIGHT STRIP  SECTION -->
 	</div>
 
 	<!--END MAIN WRAPPER -->
@@ -404,22 +340,20 @@
 
 
 	<!-- GLOBAL SCRIPTS -->
-	<!-- <script src="assets/js/jquery-1.11.3.js"></script> -->
-	<script src="plugins/jquery-2.0.3.min.js"></script>
-	<script src="plugins/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-	<script src="plugins/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<!-- <script src="/console/assets/js/jquery-1.11.3.js"></script> -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<script src="/console/plugins/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	<script src="/console/plugins/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	<!-- END GLOBAL SCRIPTS -->
 
 	<!-- PAGE LEVEL SCRIPTS -->
-	<script src="plugins/flot/jquery.flot.js"></script>
-	<script src="plugins/flot/jquery.flot.resize.js"></script>
-	<script src="plugins/flot/jquery.flot.time.js"></script>
-	<script src="plugins/flot/jquery.flot.stack.js"></script>
-	<script src="assets/js/for_index.js"></script>
+	<!-- <script src="/console/plugins/flot/jquery.flot.js"></script>
+	<script src="/console/plugins/flot/jquery.flot.resize.js"></script>
+	<script src="/console/plugins/flot/jquery.flot.time.js"></script>
+	<script src="/console/plugins/flot/jquery.flot.stack.js"></script>
+	<script src="/console/assets/js/for_index.js"></script> -->
 
 	<!-- END PAGE LEVEL SCRIPTS -->
-
-
 </body>
 
 <!-- END BODY -->

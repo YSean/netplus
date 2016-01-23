@@ -16,7 +16,8 @@
     width: 20%;
   }
   #content {
-    width: 60%;
+  	/* @content = 60% */
+    width: 100%;
     margin: 0 !important;
   }
 }
@@ -45,12 +46,15 @@
     display: none;
   }
   #content {
-    width: calc(100% - 440px);
-  }
-  .side-right #content {
+  	/* @content - 440px */
     width: calc(100% - 220px);
   }
+  .side-right #content {
+  	/* @content - 220px */
+    width: calc(100%);
+  }
   .mini-sidebar #content {
-    width: calc(100% - 100px);
+  	/* @content - 110px */
+    width: calc(100% );
   }
 }
