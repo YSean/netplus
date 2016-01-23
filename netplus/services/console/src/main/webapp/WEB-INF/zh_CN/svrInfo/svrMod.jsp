@@ -11,11 +11,6 @@
 <head>
 	<meta charset="UTF-8" />
 	<jsp:include page="/WEB-INF/zh_CN/layouts/common.jsp"></jsp:include>
-	<style>
-		.panel{
-			padding:40px;
-		}
-	</style>
 	<script type="text/javascript">
 		function init(){
 			$("#svrType").val("<c:out value='${svrInfo.svrType}'/>")

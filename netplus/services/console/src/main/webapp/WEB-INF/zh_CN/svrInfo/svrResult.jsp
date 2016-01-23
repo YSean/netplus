@@ -11,11 +11,6 @@
 <head>
 	<meta charset="UTF-8" />
 	<jsp:include page="/WEB-INF/zh_CN/layouts/common.jsp"></jsp:include>
-	<style>
-		.panel{
-			padding:40px;
-		}
-	</style>
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->

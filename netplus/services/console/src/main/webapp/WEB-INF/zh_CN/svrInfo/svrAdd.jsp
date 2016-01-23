@@ -11,11 +11,6 @@
 <head>
 	<meta charset="UTF-8" />
 	<jsp:include page="/WEB-INF/zh_CN/layouts/common.jsp"></jsp:include>
-	<style>
-		.panel{
-			padding:40px;
-		}
-	</style>
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -27,7 +22,6 @@
 		  <li class="active">添加公众号</li>
 		</ol>
 		<div class="panel">
-			<div class="panel-heading"></div>
 			<div class="panel-body">
 				<div class="form-group">
 					<label>公众号原始ID</label>
