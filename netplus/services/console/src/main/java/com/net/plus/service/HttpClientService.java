@@ -33,13 +33,11 @@ public class HttpClientService {
         		headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
         	}
         	HttpEntity request = new HttpEntity(formParams,headers);
-            return restTemplate.postForObject(url,request, String.class);
+            return restTemplate.postForObject(url,request, Map.class);
         } catch (Exception e) {
-            log.error("POST请求出错：{}"+url, e);
+            log.error("POST请求出错：{"+url+"}", e);
         }
- 
         return null;
-		
 	}
 	
 	/**
@@ -51,9 +49,8 @@ public class HttpClientService {
         try {
             return restTemplate.postForObject(url, HttpEntity.EMPTY, Map.class);
         } catch (Exception e) {
-            log.error("POST请求出错：{}"+ url, e);
+        	log.error("POST请求出错：{"+url+"}", e);
         }
- 
         return null;
     }
     
@@ -66,9 +63,8 @@ public class HttpClientService {
         try {
             return restTemplate.getForObject(url, Map.class);
         } catch (Exception e) {
-            log.error("GET请求出错：{}"+url, e);
+        	log.error("GET请求出错：{"+url+"}", e);
         }
- 
         return null;
     }
 }

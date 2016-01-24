@@ -22,8 +22,8 @@ import com.net.plus.mapper.SvrInfoMapper;
 import com.net.plus.model.SvrInfo;
 import com.net.plus.model.SvrInfoExample;
 import com.net.plus.service.HttpClientService;
+import com.net.plus.service.WechatCGIService;
 import com.net.plus.util.DateUtils;
-import com.net.plus.util.WechatCGI;
 
 @Controller
 @RequestMapping("/svrInfo")
@@ -43,7 +43,7 @@ public class SvrInfoController {
 		if(svr==null){
 			throw new NetValidationException("找不到记录");
 		}
-		String url = WechatCGI.buildUrl("token", svr.getAppId(),svr.getAppSecret());
+		String url = WechatCGIService.buildUrl("token", svr.getAppId(),svr.getAppSecret());
 		Map token = httpService.doGet(url);
 		log.info(token);
 		return "svrInfo/svrMgmt";
