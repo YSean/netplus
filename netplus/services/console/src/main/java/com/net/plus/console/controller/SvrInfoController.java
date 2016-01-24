@@ -1,10 +1,8 @@
 package com.net.plus.console.controller;
 
 import java.util.List;
-import java.util.Map;
 import java.util.UUID;
 
-import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -21,8 +19,7 @@ import com.net.plus.exception.NetValidationException;
 import com.net.plus.mapper.SvrInfoMapper;
 import com.net.plus.model.SvrInfo;
 import com.net.plus.model.SvrInfoExample;
-import com.net.plus.service.HttpClientService;
-import com.net.plus.service.WechatCGIService;
+import com.net.plus.service.AccessTokenService;
 import com.net.plus.util.DateUtils;
 
 @Controller
@@ -33,19 +30,19 @@ public class SvrInfoController {
 	@Autowired
 	SvrInfoMapper svrInfoMapper;
 	
-	@Resource(name = "httpService")
-	HttpClientService httpService;;
+	@Autowired
+	AccessTokenService accessToken;
 	
 	@RequestMapping(value = "svrMgmt.do")
 	public String mgmtSvr(@RequestParam (value="svrSeq",required=true) String svrSeq)
 			throws NetValidationException{
-		SvrInfo svr = svrInfoMapper.selectByPrimaryKey(svrSeq);
+		/*SvrInfo svr = svrInfoMapper.selectByPrimaryKey(svrSeq);
 		if(svr==null){
 			throw new NetValidationException("找不到记录");
 		}
 		String url = WechatCGIService.buildUrl("token", svr.getAppId(),svr.getAppSecret());
 		Map token = httpService.doGet(url);
-		log.info(token);
+		log.info(token);*/
 		return "svrInfo/svrMgmt";
 	}
 	
@@ -74,6 +71,9 @@ public class SvrInfoController {
 		svrInfo.setUrlRecv(Constants.wechatUrl);
 		
 		try{
+			if(accessToken.getAccessToken(svrInfo)==null){
+				throw new NetValidationException("获取凭证失败");
+			}
 			svrInfoMapper.insert(svrInfo);
 			model.addObject("OperResult","成功");
 		}catch(Exception ex){
@@ -88,7 +88,7 @@ public class SvrInfoController {
 	}
 	
 	@RequestMapping(value = "svrChangeState.do")
-	public ModelAndView doSvrAdd(@RequestParam (value="svrSeq",required=true) String svrSeq
+	public ModelAndView doSvrChangeState(@RequestParam (value="svrSeq",required=true) String svrSeq
 			,@RequestParam(value="svrState",defaultValue=Constants.OFF) String svrState) throws NetValidationException{
 		log.info("close Svr Info"+svrSeq);
 		ModelAndView model = new ModelAndView("svrInfo/svrResult");

@@ -462,3 +462,78 @@ Caused by: org.apache.http.ProtocolException: Target host is not specified
 497561 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByPrimaryKey - ==> Parameters: 577323e7-113d-4347-b872-c442968fb077(String)
 497565 [qtp1232306490-37] DEBUG c.n.p.m.S.selectByPrimaryKey - <==      Total: 1
 505356 [qtp1232306490-37] INFO  c.n.p.c.c.SvrInfoController - {access_token=HmKH3efZ4HFRCapSH5Te6zOoMjen0PGlpmY3kT8_Db7sI7I1bMQ8pUyjlSsedFm0XyGV6qRiZnhOvx_rnVyRF5ETGZgenNvFvrA4gQvpeEEGEFjAFAMKL, expires_in=7200}
+2312308 [qtp1232306490-71] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+2312353 [qtp1232306490-71] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+2312394 [qtp1232306490-71] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+2338405 [qtp1232306490-68] INFO  c.n.p.c.c.SvrInfoController - del Svr Info577323e7-113d-4347-b872-c442968fb077
+2338409 [qtp1232306490-68] DEBUG c.n.p.m.S.deleteByPrimaryKey - ==>  Preparing: delete from svr_info where SVR_SEQ = ? 
+2338410 [qtp1232306490-68] DEBUG c.n.p.m.S.deleteByPrimaryKey - ==> Parameters: 577323e7-113d-4347-b872-c442968fb077(String)
+2338423 [qtp1232306490-68] DEBUG c.n.p.m.S.deleteByPrimaryKey - <==    Updates: 1
+2340123 [qtp1232306490-70] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+2340123 [qtp1232306490-70] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+2340124 [qtp1232306490-70] DEBUG c.n.p.m.S.selectByExample - <==      Total: 0
+10124 [qtp1232306490-29] DEBUG c.n.p.c.c.SvrInfoController - com.net.plus.model.SvrInfo@3803e18
+11666 [qtp1232306490-29] DEBUG c.n.p.m.S.updateByPrimaryKeySelective - ==>  Preparing: update svr_info SET STATE = ?, SVR_ID = ?, svr_NAME = ?, TOKEN = ?, APP_ID = ?, APP_SECRET = ?, ACCESS_TOKEN = ?, URL_RECV = ?, SVR_TYPE = ?, CTIME = ? where SVR_SEQ = ? 
+11721 [qtp1232306490-29] DEBUG c.n.p.m.S.updateByPrimaryKeySelective - ==> Parameters: 0(String), gh_5dbc1217ebdb(String), 时尚摩登坊(String), sxkiler(String), wx124184999da46591(String), 0a56a212188975ce4a6cd9066d85f987(String), 7200,1453613542651,WKhkdKtyixs9i-6-qeVyqS331VZ7KNo2fzl3D6bpGCHOtG_HRm8R2hO_No8sBpsxDoYgeiwAw3YI6AhM_yx58ppCjzeIWE0flL25OLXwlb8FJXbAEAZDR(String), /wechat/Event(String), F(String), 2016-01-24 13:32:21.684(Timestamp), 0a33c758-756e-45c6-b4bd-966d0f8d10ee(String)
+11723 [qtp1232306490-29] DEBUG c.n.p.m.S.updateByPrimaryKeySelective - <==    Updates: 0
+11733 [qtp1232306490-29] ERROR c.n.p.c.c.SvrInfoController - java.lang.NullPointerException
+java.lang.NullPointerException: null
+	at com.net.plus.service.AccessTokenService.getAccessToken(AccessTokenService.java:65) ~[classes/:na]
+	at com.net.plus.console.controller.SvrInfoController.doSvrAdd(SvrInfoController.java:74) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215) [spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132) [spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:781) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:721) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:943) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:877) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:868) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:755) [javax.servlet.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842) [spring-webmvc-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [javax.servlet.jar:na]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684) [jetty-servlet.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1496) [jetty-servlet.jar:8.1.14.v20131031]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88) [spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.1.RELEASE.jar:4.1.1.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1476) [jetty-servlet.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:499) [jetty-servlet.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557) [jetty-security.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:428) [jetty-servlet.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.Server.handle(Server.java:370) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:865) [jetty-http.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240) [jetty-http.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:667) [jetty-io.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52) [jetty-io.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util.jar:8.1.14.v20131031]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_66]
+10373 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+10429 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+10462 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - <==      Total: 0
+26712 [qtp1232306490-29] DEBUG c.n.p.c.c.SvrInfoController - com.net.plus.model.SvrInfo@7e8dbb4a
+27520 [qtp1232306490-29] DEBUG c.n.p.m.S.updateByPrimaryKeySelective - ==>  Preparing: update svr_info SET STATE = ?, SVR_ID = ?, svr_NAME = ?, TOKEN = ?, APP_ID = ?, APP_SECRET = ?, ACCESS_TOKEN = ?, URL_RECV = ?, SVR_TYPE = ?, CTIME = ? where SVR_SEQ = ? 
+27525 [qtp1232306490-29] DEBUG c.n.p.m.S.updateByPrimaryKeySelective - ==> Parameters: 0(String), gh_5dbc1217ebdb(String), 时尚摩登坊(String), sxkiler(String), wx124184999da46591(String), 0a56a212188975ce4a6cd9066d85f987(String), 7200,1453613668161,1hcbnsgokE7bmaomQekk6yu8Ii6LmnJ-v2Q0y28D_wx39qOL-DkGCfm9Q-szp3tRSyAzwTUU_mEKQGysYApKukpahKOJ12LR7pgMLa79ejgMDEaAEAWNO(String), /wechat/Event(String), F(String), 2016-01-24 13:34:27.358(Timestamp), 09c0a153-5e37-444f-82f7-6f227ab1242a(String)
+27527 [qtp1232306490-29] DEBUG c.n.p.m.S.updateByPrimaryKeySelective - <==    Updates: 0
+27528 [qtp1232306490-29] DEBUG c.n.p.mapper.SvrInfoMapper.insert - ==>  Preparing: insert into svr_info (SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+27532 [qtp1232306490-29] DEBUG c.n.p.mapper.SvrInfoMapper.insert - ==> Parameters: 09c0a153-5e37-444f-82f7-6f227ab1242a(String), 0(String), gh_5dbc1217ebdb(String), 时尚摩登坊(String), sxkiler(String), wx124184999da46591(String), 0a56a212188975ce4a6cd9066d85f987(String), 7200,1453613668161,1hcbnsgokE7bmaomQekk6yu8Ii6LmnJ-v2Q0y28D_wx39qOL-DkGCfm9Q-szp3tRSyAzwTUU_mEKQGysYApKukpahKOJ12LR7pgMLa79ejgMDEaAEAWNO(String), null, /wechat/Event(String), F(String), null, 2016-01-24 13:34:27.358(Timestamp)
+27538 [qtp1232306490-29] DEBUG c.n.p.mapper.SvrInfoMapper.insert - <==    Updates: 1
+30658 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+30659 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+30675 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1

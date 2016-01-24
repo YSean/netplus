@@ -61,8 +61,11 @@ public class AccessTokenService {
 			if(svr.getSvrSeq()!=null){
 				svrInfoMapper.updateByPrimaryKeySelective(svr);
 			}
+			obj = getInstance(remoteToken);
+			return obj.getToken();
+		}else{
+			return obj.getToken();
 		}
-		return obj.getToken();
 	}
 	private String getRemoteToken(String appId,String appSecret){
 		Map map = httpService.doGet(String.format(accessTokenUrl, appId,appSecret));

@@ -15,6 +15,8 @@ public class WechatCGIService{
 	
 	@Resource
 	HttpClientService httpService;
+	@Resource
+	AccessTokenService accessToken;
 	
 	private static Map reqObj = new HashMap();
 	static{
