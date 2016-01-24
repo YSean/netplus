@@ -30,4 +30,8 @@ public class WechatCGIService{
 		}
 		return String.format(url, params);
 	}
+	
+	public Map send(){
+		return null;
+	}
 }

@@ -13,4 +13,12 @@ public class Utils {
 		}
 		return false;
 	}
+	
+	public static String buildString(String ... args){
+		StringBuilder builder = new StringBuilder();
+		for(String i : args){
+			builder.append(i);
+		}
+		return builder.toString();
+	}
 }
