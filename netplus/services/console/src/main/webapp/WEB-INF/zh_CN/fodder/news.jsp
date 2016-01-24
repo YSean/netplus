@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	图文
 </body>
 </html>

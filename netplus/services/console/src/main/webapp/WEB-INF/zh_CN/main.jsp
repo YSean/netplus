@@ -298,7 +298,8 @@
 						<li class=""><a href="javascript:void(0);" onclick="toMenu('menus','menusInit')"> 
 								<i class="icon-angle-right"></i>菜单管理
 						</a></li>
-						<li class=""><a href="javascript:void(0);"> <i class="icon-angle-right"></i>素材管理
+						<li class=""><a href="javascript:void(0);" onclick="toMenu('fodder','init')">
+								<i class="icon-angle-right"></i>素材管理
 						</a></li>
 						<li class=""><a href="javascript:void(0);"> <i class="icon-angle-right"></i>关键字管理
 						</a></li>
