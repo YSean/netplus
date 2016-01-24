@@ -537,3 +537,6 @@ java.lang.NullPointerException: null
 30658 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
 30659 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
 30675 [qtp1232306490-32] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1
+23536 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==>  Preparing: select 'true' as QUERYID, SVR_SEQ, STATE, SVR_ID, svr_NAME, TOKEN, APP_ID, APP_SECRET, ACCESS_TOKEN, URL_SEND, URL_RECV, SVR_TYPE, ENCODEING_AESKEY, CTIME from svr_info 
+23591 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - ==> Parameters: 
+23633 [qtp1232306490-29] DEBUG c.n.p.m.S.selectByExample - <==      Total: 1

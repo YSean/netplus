@@ -295,7 +295,8 @@
 						</a></li>
 						<li class=""><a href="javascript:void(0);"> <i class="icon-angle-right"></i>用户管理
 						</a></li>
-						<li class=""><a href="javascript:void(0);"> <i class="icon-angle-right"></i>菜单管理
+						<li class=""><a href="javascript:void(0);" onclick="toMenu('menus','menusInit')"> 
+								<i class="icon-angle-right"></i>菜单管理
 						</a></li>
 						<li class=""><a href="javascript:void(0);"> <i class="icon-angle-right"></i>素材管理
 						</a></li>
