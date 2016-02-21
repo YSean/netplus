@@ -9,8 +9,33 @@
 <head>
 	<meta charset="UTF-8" />
 	<jsp:include page="/WEB-INF/zh_CN/layouts/common.jsp"></jsp:include>
+	<script type="text/javascript">
+		function upload(){
+			var formData = new FormData($( "#postForm" )[0]);  
+			$.ajax({
+				url: 'http://localhost:8080/console/image/upload.do' ,  
+		          type: 'POST',  
+		          data: formData,  
+		          async: false,  
+		          cache: false,  
+		          contentType: false,  
+		          processData: false,  
+		          success: function (returndata) {  
+		              alert(returndata);  
+		          },  
+		          error: function (returndata) {  
+		              alert(returndata);  
+		          }
+			});
+		}
+	</script>
 </head>
 <body>
-	<jsp:include page="/WEB-INF/zh_CN/layouts/ueditor.jsp"></jsp:include>
+	<form id="postForm" method="post" enctype="multipart/form-data">
+		<input type="file" name="file" />
+		<input type="button" value="Submit" onclick="upload()"/>
+		<span id="serverResponse"></span>
+	</form>
+	<%-- <jsp:include page="/WEB-INF/zh_CN/layouts/ueditor.jsp"></jsp:include> --%>
 </body>
 </html>

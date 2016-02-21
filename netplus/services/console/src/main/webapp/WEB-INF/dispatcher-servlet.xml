@@ -22,7 +22,11 @@
 		<!-- <context:include-filter type="annotation" expression=""/> --><!-- 包含包名 -->
 		<!-- <context:exclude-filter type="annotation" expression=""/> --><!-- 不包含包名 -->
 	</context:component-scan>
+	<!-- console的公共服务 -->
 	<context:component-scan base-package="com.net.plus.service" >
+	</context:component-scan>
+	<!-- wechat接口服务 -->
+	<context:component-scan base-package="com.net.plus.wechat.service" >
 	</context:component-scan>
 	<!-- 扩充了注解驱动,可以将请求参数绑定到控制器参数 -->
 	<mvc:annotation-driven />
@@ -58,6 +62,8 @@
 			</list>
 		</property>
 	</bean>
+	<!-- 支持上传文件 -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/> 
 	
 	<!-- <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/views/" />

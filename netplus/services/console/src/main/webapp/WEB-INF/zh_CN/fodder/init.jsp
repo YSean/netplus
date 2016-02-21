@@ -13,8 +13,15 @@
 	<jsp:include page="/WEB-INF/zh_CN/layouts/common.jsp"></jsp:include>
 </head>
 <body>
+	<ol class="breadcrumb">
+	  <li><a href="/console/welcome.do">Home</a></li>
+	  <li><a href="init.do">素材管理</a></li>
+	  <li class="active">...</li>
+	</ol>
 	<div class="panel">
-		<div class="panel-heading">素材管理</div>
+		<div class="panel-heading">
+			<h4>素材管理</h4>
+		</div>
 		<div class="panel-body">
 			<ul class="nav nav-tabs" id="myTabs">
 			  <li role="presentation" class="active"><a href="#newsTab">图文消息</a></li>
