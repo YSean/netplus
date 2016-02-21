@@ -1,4 +1,4 @@
-package com.net.plus.service;
+package com.net.plus.wechat.service;
 
 import java.sql.Timestamp;
 import java.util.Map;
@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import com.net.plus.common.Constants;
 import com.net.plus.mapper.SvrInfoMapper;
 import com.net.plus.model.SvrInfo;
+import com.net.plus.service.HttpClientService;
 import com.net.plus.util.Utils;
 
 @Service
