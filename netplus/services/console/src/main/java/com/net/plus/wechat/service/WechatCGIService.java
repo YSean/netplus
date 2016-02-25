@@ -21,6 +21,7 @@ public class WechatCGIService{
 	
 	private static Map reqObj = new HashMap();
 	static{
+		reqObj.put("default", Constants.wechatApiCgi+"%s?access_token=%s");
 		reqObj.put("token", Constants.wechatApiCgi+"token?grant_type=client_credential&appid=%s&secret=%s");
 		reqObj.put("menu", Constants.wechatApiCgi + "menu?%s?access_token=%s");
 	}

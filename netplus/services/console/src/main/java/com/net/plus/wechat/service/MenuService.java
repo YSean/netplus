@@ -80,4 +80,14 @@ public class MenuService {
 		String url = WechatCGIService.buildUrl("menu", "trymatch",accessToken);
 		return null;
 	}
+	/**
+	 * 获取微信菜单配置信息
+	 * @param svrSeq
+	 * @return
+	 */
+	public Object getWechatMenusConfir(String svrSeq){
+		String accessToken =  token.getAccessToken(svrSeq);
+		String url = WechatCGIService.buildUrl("default", "get_current_selfmenu_info",accessToken);
+		return null;
+	}
 }
