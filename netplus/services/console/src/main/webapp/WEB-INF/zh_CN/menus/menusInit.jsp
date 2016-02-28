@@ -28,12 +28,30 @@
 		          }
 			});
 		}
+		function publish(){
+			var formData = new FormData($( "#postForm" )[0]);  
+			$.ajax({
+				url: 'http://localhost:8080/console/image/publish.do' ,  
+		          type: 'POST',  
+		          async: false,  
+		          cache: false,  
+		          contentType: false,  
+		          processData: false,  
+		          success: function (returndata) {  
+		              alert(returndata);  
+		          },  
+		          error: function (returndata) {  
+		              alert(returndata);  
+		          }
+			});
+		}
 	</script>
 </head>
 <body>
 	<form id="postForm" method="post" enctype="multipart/form-data">
 		<input type="file" name="file" />
-		<input type="button" value="Submit" onclick="upload()"/>
+		<input type="button" value="Submit" onclick="upload()"/><br/>
+		<input type="button" value="Publish" onclick="publish()"/>
 		<span id="serverResponse"></span>
 	</form>
 	<%-- <jsp:include page="/WEB-INF/zh_CN/layouts/ueditor.jsp"></jsp:include> --%>
