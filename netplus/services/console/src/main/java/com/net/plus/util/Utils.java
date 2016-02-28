@@ -1,6 +1,7 @@
 package com.net.plus.util;
 
 import java.util.List;
+import java.util.UUID;
 
 public class Utils {
 
@@ -20,5 +21,9 @@ public class Utils {
 			builder.append(i);
 		}
 		return builder.toString();
+	}
+	
+	public static String getUuid(){
+		return UUID.randomUUID().toString();
 	}
 }

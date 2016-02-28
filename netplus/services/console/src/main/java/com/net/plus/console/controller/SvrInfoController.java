@@ -20,7 +20,9 @@ import com.net.plus.mapper.SvrInfoMapper;
 import com.net.plus.model.SvrInfo;
 import com.net.plus.model.SvrInfoExample;
 import com.net.plus.util.DateUtils;
+import com.net.plus.util.Utils;
 import com.net.plus.wechat.service.AccessTokenService;
+import com.net.plus.wechat.service.MenuService;
 
 @Controller
 @RequestMapping("/svrInfo")
@@ -33,6 +35,9 @@ public class SvrInfoController {
 	@Autowired
 	AccessTokenService accessToken;
 	
+	@Autowired
+	MenuService menuService;
+	
 	@RequestMapping(value = "svrMgmt.do")
 	public String mgmtSvr(@RequestParam (value="svrSeq",required=true) String svrSeq)
 			throws NetValidationException{
@@ -43,6 +48,7 @@ public class SvrInfoController {
 		String url = WechatCGIService.buildUrl("token", svr.getAppId(),svr.getAppSecret());
 		Map token = httpService.doGet(url);
 		log.info(token);*/
+		menuService.createMenu(svrSeq);
 		return "svrInfo/svrMgmt";
 	}
 	
@@ -65,7 +71,7 @@ public class SvrInfoController {
 		if(svrInfo==null){
 			throw new  NetValidationException("svrInfo.is.empty");
 		}
-		svrInfo.setSvrSeq(UUID.randomUUID().toString());
+		svrInfo.setSvrSeq(Utils.getUuid());
 		svrInfo.setCtime(DateUtils.currentDate());
 		svrInfo.setState(Constants.OK);
 		svrInfo.setUrlRecv(Constants.wechatUrl);
@@ -154,6 +160,9 @@ public class SvrInfoController {
 		}
 		svrInfo.setState(Constants.OK);
 		try{
+			if(accessToken.getAccessToken(svrInfo)==null){
+				throw new NetValidationException("获取凭证失败");
+			}
 			svrInfoMapper.updateByPrimaryKeySelective(svrInfo);
 			model.addObject("OperResult","成功");
 		}catch(Exception ex){

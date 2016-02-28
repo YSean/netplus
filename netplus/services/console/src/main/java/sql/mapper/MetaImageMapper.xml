@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.net.plus.mapper.MetaImageMapper" >
+  <resultMap id="BaseResultMap" type="com.net.plus.model.MetaImage" >
+    <id column="IMG_ID" property="imgId" jdbcType="VARCHAR" />
+    <result column="IMG_SIZE" property="imgSize" jdbcType="BIGINT" />
+    <result column="IMG_TYPE" property="imgType" jdbcType="VARCHAR" />
+    <result column="IMG_HEIGHT" property="imgHeight" jdbcType="INTEGER" />
+    <result column="IMG_WIDTH" property="imgWidth" jdbcType="INTEGER" />
+    <result column="IMG_NAME" property="imgName" jdbcType="VARCHAR" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.net.plus.model.MetaImage" extends="BaseResultMap" >
+    <result column="IMG_DATA" property="imgData" jdbcType="LONGVARBINARY" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    IMG_ID, IMG_SIZE, IMG_TYPE, IMG_HEIGHT, IMG_WIDTH, IMG_NAME
+  </sql>
+  <sql id="Blob_Column_List" >
+    IMG_DATA
+  </sql>
+  <select id="selectByExampleWithBLOBs" resultMap="ResultMapWithBLOBs" parameterType="com.net.plus.model.MetaImageExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from meta_image
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.net.plus.model.MetaImageExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from meta_image
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from meta_image
+    where IMG_ID = #{imgId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from meta_image
+    where IMG_ID = #{imgId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.net.plus.model.MetaImageExample" >
+    delete from meta_image
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.net.plus.model.MetaImage" >
+    insert into meta_image (IMG_ID, IMG_SIZE, IMG_TYPE, 
+      IMG_HEIGHT, IMG_WIDTH, IMG_NAME, 
+      IMG_DATA)
+    values (#{imgId,jdbcType=VARCHAR}, #{imgSize,jdbcType=BIGINT}, #{imgType,jdbcType=VARCHAR}, 
+      #{imgHeight,jdbcType=INTEGER}, #{imgWidth,jdbcType=INTEGER}, #{imgName,jdbcType=VARCHAR}, 
+      #{imgData,jdbcType=LONGVARBINARY})
+  </insert>
+  <insert id="insertSelective" parameterType="com.net.plus.model.MetaImage" >
+    insert into meta_image
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="imgId != null" >
+        IMG_ID,
+      </if>
+      <if test="imgSize != null" >
+        IMG_SIZE,
+      </if>
+      <if test="imgType != null" >
+        IMG_TYPE,
+      </if>
+      <if test="imgHeight != null" >
+        IMG_HEIGHT,
+      </if>
+      <if test="imgWidth != null" >
+        IMG_WIDTH,
+      </if>
+      <if test="imgName != null" >
+        IMG_NAME,
+      </if>
+      <if test="imgData != null" >
+        IMG_DATA,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="imgId != null" >
+        #{imgId,jdbcType=VARCHAR},
+      </if>
+      <if test="imgSize != null" >
+        #{imgSize,jdbcType=BIGINT},
+      </if>
+      <if test="imgType != null" >
+        #{imgType,jdbcType=VARCHAR},
+      </if>
+      <if test="imgHeight != null" >
+        #{imgHeight,jdbcType=INTEGER},
+      </if>
+      <if test="imgWidth != null" >
+        #{imgWidth,jdbcType=INTEGER},
+      </if>
+      <if test="imgName != null" >
+        #{imgName,jdbcType=VARCHAR},
+      </if>
+      <if test="imgData != null" >
+        #{imgData,jdbcType=LONGVARBINARY},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.net.plus.model.MetaImageExample" resultType="java.lang.Integer" >
+    select count(*) from meta_image
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update meta_image
+    <set >
+      <if test="record.imgId != null" >
+        IMG_ID = #{record.imgId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.imgSize != null" >
+        IMG_SIZE = #{record.imgSize,jdbcType=BIGINT},
+      </if>
+      <if test="record.imgType != null" >
+        IMG_TYPE = #{record.imgType,jdbcType=VARCHAR},
+      </if>
+      <if test="record.imgHeight != null" >
+        IMG_HEIGHT = #{record.imgHeight,jdbcType=INTEGER},
+      </if>
+      <if test="record.imgWidth != null" >
+        IMG_WIDTH = #{record.imgWidth,jdbcType=INTEGER},
+      </if>
+      <if test="record.imgName != null" >
+        IMG_NAME = #{record.imgName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.imgData != null" >
+        IMG_DATA = #{record.imgData,jdbcType=LONGVARBINARY},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map" >
+    update meta_image
+    set IMG_ID = #{record.imgId,jdbcType=VARCHAR},
+      IMG_SIZE = #{record.imgSize,jdbcType=BIGINT},
+      IMG_TYPE = #{record.imgType,jdbcType=VARCHAR},
+      IMG_HEIGHT = #{record.imgHeight,jdbcType=INTEGER},
+      IMG_WIDTH = #{record.imgWidth,jdbcType=INTEGER},
+      IMG_NAME = #{record.imgName,jdbcType=VARCHAR},
+      IMG_DATA = #{record.imgData,jdbcType=LONGVARBINARY}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update meta_image
+    set IMG_ID = #{record.imgId,jdbcType=VARCHAR},
+      IMG_SIZE = #{record.imgSize,jdbcType=BIGINT},
+      IMG_TYPE = #{record.imgType,jdbcType=VARCHAR},
+      IMG_HEIGHT = #{record.imgHeight,jdbcType=INTEGER},
+      IMG_WIDTH = #{record.imgWidth,jdbcType=INTEGER},
+      IMG_NAME = #{record.imgName,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.net.plus.model.MetaImage" >
+    update meta_image
+    <set >
+      <if test="imgSize != null" >
+        IMG_SIZE = #{imgSize,jdbcType=BIGINT},
+      </if>
+      <if test="imgType != null" >
+        IMG_TYPE = #{imgType,jdbcType=VARCHAR},
+      </if>
+      <if test="imgHeight != null" >
+        IMG_HEIGHT = #{imgHeight,jdbcType=INTEGER},
+      </if>
+      <if test="imgWidth != null" >
+        IMG_WIDTH = #{imgWidth,jdbcType=INTEGER},
+      </if>
+      <if test="imgName != null" >
+        IMG_NAME = #{imgName,jdbcType=VARCHAR},
+      </if>
+      <if test="imgData != null" >
+        IMG_DATA = #{imgData,jdbcType=LONGVARBINARY},
+      </if>
+    </set>
+    where IMG_ID = #{imgId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.net.plus.model.MetaImage" >
+    update meta_image
+    set IMG_SIZE = #{imgSize,jdbcType=BIGINT},
+      IMG_TYPE = #{imgType,jdbcType=VARCHAR},
+      IMG_HEIGHT = #{imgHeight,jdbcType=INTEGER},
+      IMG_WIDTH = #{imgWidth,jdbcType=INTEGER},
+      IMG_NAME = #{imgName,jdbcType=VARCHAR},
+      IMG_DATA = #{imgData,jdbcType=LONGVARBINARY}
+    where IMG_ID = #{imgId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.net.plus.model.MetaImage" >
+    update meta_image
+    set IMG_SIZE = #{imgSize,jdbcType=BIGINT},
+      IMG_TYPE = #{imgType,jdbcType=VARCHAR},
+      IMG_HEIGHT = #{imgHeight,jdbcType=INTEGER},
+      IMG_WIDTH = #{imgWidth,jdbcType=INTEGER},
+      IMG_NAME = #{imgName,jdbcType=VARCHAR}
+    where IMG_ID = #{imgId,jdbcType=VARCHAR}
+  </update>
+</mapper>

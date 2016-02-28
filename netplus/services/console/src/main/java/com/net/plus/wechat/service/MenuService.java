@@ -1,5 +1,10 @@
 package com.net.plus.wechat.service;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -7,17 +12,25 @@ import org.springframework.stereotype.Service;
 public class MenuService {
 
 	@Autowired
-	public AccessTokenService token;
+	public WechatCGIService wechatCgi;
+	@Autowired
+	public AccessTokenService accessToken;
 	/**
 	 * 
 	 * @param svrSeq
 	 * @return
 	 */
 	public Object createMenu(String svrSeq){
-		String accessToken =  token.getAccessToken(svrSeq);
-		String url = WechatCGIService.buildUrl("menu", "create",accessToken);
-		WechatCGIService.sendParams(url, null);
-		return null;
+		String url =  wechatCgi.buildUrl("menu","create",accessToken.getAccessToken(svrSeq));
+		Map<String,Object>input = new HashMap();
+		List<Map<String,Object>> menus = new ArrayList<Map<String,Object>>();
+		Map<String,Object> menu1 = new HashMap();
+		menu1.put("type","scancode_waitmsg");
+		menu1.put("name","扫码带提示");
+		menu1.put("key","rselfmenu_0_0");
+		menus.add(menu1);
+		input.put("button", menus);
+		return wechatCgi.sendParams(url,input);
 	}
 	/**
 	 * menu + conditionalmenu
@@ -25,8 +38,6 @@ public class MenuService {
 	 * @return
 	 */
 	public Object getMenu(String svrSeq){
-		String accessToken =  token.getAccessToken(svrSeq);
-		String url = WechatCGIService.buildUrl("menu", "get",accessToken);
 		return null;
 	}
 	/**
@@ -35,8 +46,6 @@ public class MenuService {
 	 * @return
 	 */
 	public Object delMenu(String svrSeq){
-		String accessToken =  token.getAccessToken(svrSeq);
-		String url = WechatCGIService.buildUrl("menu", "delete",accessToken);
 		return null;
 	}
 	/**
@@ -55,8 +64,7 @@ public class MenuService {
 	 * @return
 	 */
 	public Object addConditional(String svrSeq){
-		String accessToken =  token.getAccessToken(svrSeq);
-		String url = WechatCGIService.buildUrl("menu", "addconditional",accessToken);
+		String url = wechatCgi.buildUrl("menu", "addconditional",accessToken.getAccessToken(svrSeq));
 		return null;
 	}
 	/**
@@ -65,8 +73,7 @@ public class MenuService {
 	 * @return
 	 */
 	public Object delConditional(String svrSeq){
-		String accessToken =  token.getAccessToken(svrSeq);
-		String url = WechatCGIService.buildUrl("menu", "delconditional",accessToken);
+		String url = wechatCgi.buildUrl("menu", "delconditional",accessToken.getAccessToken(svrSeq));
 		return null;
 	}
 	
@@ -76,8 +83,7 @@ public class MenuService {
 	 * @return
 	 */
 	public Object trymatch(String svrSeq){
-		String accessToken =  token.getAccessToken(svrSeq);
-		String url = WechatCGIService.buildUrl("menu", "trymatch",accessToken);
+		String url = wechatCgi.buildUrl("menu", "trymatch",accessToken.getAccessToken(svrSeq));
 		return null;
 	}
 	/**
@@ -86,8 +92,8 @@ public class MenuService {
 	 * @return
 	 */
 	public Object getWechatMenusConfir(String svrSeq){
-		String accessToken =  token.getAccessToken(svrSeq);
-		String url = WechatCGIService.buildUrl("default", "get_current_selfmenu_info",accessToken);
+		String url = wechatCgi.buildUrl("default", "get_current_selfmenu_info",accessToken.getAccessToken(svrSeq));
+		wechatCgi.sendParams(url);
 		return null;
 	}
 }

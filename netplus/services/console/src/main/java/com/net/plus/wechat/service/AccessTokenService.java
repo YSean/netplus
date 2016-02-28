@@ -69,7 +69,7 @@ public class AccessTokenService {
 		}
 	}
 	private String getRemoteToken(String appId,String appSecret){
-		Map map = httpService.doGet(String.format(accessTokenUrl, appId,appSecret));
+		Map map = httpService.send(String.format(accessTokenUrl, appId,appSecret));
 		if(map.get("access_token")==null){
 			log.error(Utils.buildString("@@@@{",appId,"=",appSecret,"}获取凭证失败"));
 			return null;
@@ -79,8 +79,8 @@ public class AccessTokenService {
 				String.valueOf(System.currentTimeMillis()),",",
 				map.get("access_token").toString());
 	}
-	private boolean isTimeout(Long timestamp,Long timeout){
-		if((timestamp + timeout) < System.currentTimeMillis()){
+	private boolean isTimeout(Long timeout,Long timestamp){
+		if((timestamp + timeout*1000) < System.currentTimeMillis()){
 			return true;
 		}else{
 			return false;

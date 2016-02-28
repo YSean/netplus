@@ -44,7 +44,7 @@
 	<bean id="httpClient" factory-bean="httpClientBuilder" factory-method="build" />
 
 	<!-- httpclient4.3之后才有 -->
-	<bean id="clientHttpRequestFactory" class="org.springframework.http.client.HttpComponentsClientHttpRequestFactory">
+	<!-- <bean id="clientHttpRequestFactory" class="org.springframework.http.client.HttpComponentsClientHttpRequestFactory">
 		<constructor-arg ref="httpClient" />
 		<property name="connectTimeout" value="30000" />
 		<property name="readTimeout" value="30000" />
@@ -57,11 +57,11 @@
 		</property>
 		<property name="messageConverters">
 			<list>
-				<!-- <bean class="org.springframework.http.converter.xml.MappingJackson2XmlHttpMessageConverter"/> -->
+				<bean class="org.springframework.http.converter.xml.MappingJackson2XmlHttpMessageConverter"/>
 				<bean class="org.springframework.http.converter.FormHttpMessageConverter" />
 				<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" />
 				<bean class="org.springframework.http.converter.StringHttpMessageConverter" />
 			</list>
 		</property>
-	</bean>
+	</bean> -->
 </beans>
