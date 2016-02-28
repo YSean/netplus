@@ -1,17 +1,3 @@
-/*
-SQLyog 企业版 - MySQL GUI v8.14 
-MySQL - 5.6.24-enterprise-commercial-advanced-log : Database - netplus
-*********************************************************************
-*/
-
-/*!40101 SET NAMES utf8 */;
-
-/*!40101 SET SQL_MODE=''*/;
-
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 CREATE DATABASE /*!32312 IF NOT EXISTS*/`netplus` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
 USE `netplus`;
@@ -55,36 +41,6 @@ CREATE TABLE `apszone` (
 
 /*Data for the table `apszone` */
 
-/*Table structure for table `article` */
-
-DROP TABLE IF EXISTS `article`;
-
-CREATE TABLE `article` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `userid` int(11) NOT NULL,
-  `title` varchar(100) NOT NULL,
-  `content` text NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
-
-/*Data for the table `article` */
-
-insert  into `article`(`id`,`userid`,`title`,`content`) values (1,1,'test_title','test_content'),(2,1,'test_title_2','test_content_2'),(3,1,'test_title_3','test_content_3'),(4,1,'test_title_4','test_content_4');
-
-/*Table structure for table `menus` */
-
-DROP TABLE IF EXISTS `menus`;
-
-CREATE TABLE `menus` (
-  `MENU_SEQ` varchar(64) NOT NULL,
-  `MENU_CODE` varchar(32) NOT NULL,
-  `MENU_NAME` varchar(32) DEFAULT NULL,
-  `MENU_TYPE` varchar(10) DEFAULT NULL,
-  `DEF` varchar(256) DEFAULT NULL,
-  `PARENT` varchar(64) DEFAULT NULL,
-  `ORDER_ID` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`MENU_SEQ`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 /*Data for the table `menus` */
 
@@ -187,18 +143,7 @@ CREATE TABLE `svr_info` (
 
 insert  into `svr_info`(`SVR_SEQ`,`STATE`,`SVR_ID`,`svr_NAME`,`TOKEN`,`APP_ID`,`APP_SECRET`,`ACCESS_TOKEN`,`URL_SEND`,`URL_RECV`,`SVR_TYPE`,`ENCODEING_AESKEY`,`CTIME`) values ('09c0a153-5e37-444f-82f7-6f227ab1242a','0','gh_5dbc1217ebdb','时尚摩登坊','sxkiler','wx124184999da46591','0a56a212188975ce4a6cd9066d85f987','7200,1453613668161,1hcbnsgokE7bmaomQekk6yu8Ii6LmnJ-v2Q0y28D_wx39qOL-DkGCfm9Q-szp3tRSyAzwTUU_mEKQGysYApKukpahKOJ12LR7pgMLa79ejgMDEaAEAWNO',NULL,'/wechat/Event','F',NULL,'2016-01-24 13:34:27'),('83a6d570-8aae-4f7f-a029-bd9d6002cefc','0','gh_5f52e4ff7fda','ST微信信用卡测试号','silveraegis','wxb0de08ff7df4537f','6f04f20ba8c23bb14f4454ea5c5a0c79','7200,1456014652526,VE5s9qTEXrBTOeXmo9EuCJhHsiDkHEzmkvVMuPQiKgIBHoUlw9RiQzS_a_yrLP_NhfTqVnscu9pEjr6ulzRud0lxGeU248wWcguXhXJufGgAJZhABAGPF',NULL,'/wechat/Event','C',NULL,'2016-02-21 08:30:52');
 
-/*Table structure for table `svr_menus` */
 
-DROP TABLE IF EXISTS `svr_menus`;
-
-CREATE TABLE `svr_menus` (
-  `SVR_SEQ` varchar(64) NOT NULL,
-  `MENU_SEQ` varchar(64) NOT NULL DEFAULT '',
-  `MENU_ID` varchar(64) DEFAULT NULL,
-  PRIMARY KEY (`SVR_SEQ`,`MENU_SEQ`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-/*Data for the table `svr_menus` */
 
 /*Table structure for table `teller` */
 
@@ -236,7 +181,15 @@ CREATE TABLE `user` (
 
 insert  into `user`(`id`,`userName`,`userAge`,`userAddress`) values (1,'summer',102,'shanghai,pudong'),(4,'飞鸟',80,'原来是魔都的浦东创新园区'),(5,'飞鸟',80,'人民广场');
 
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+/*图片资源表*/
+CREATE TABLE `meta_image` (
+  `IMG_ID` VARCHAR(64) COLLATE utf8_general_ci NOT NULL,
+  `IMG_DATA` BLOB,
+  `IMG_SIZE` INTEGER(11) DEFAULT NULL,
+  `IMG_TYPE` VARCHAR(11) COLLATE utf8_general_ci NOT NULL,
+  `IMG_HEIGHT` INTEGER(11) DEFAULT NULL,
+  `IMG_WIDTH` INTEGER(11) DEFAULT NULL,
+  `IMG_NAME` VARCHAR(64) COLLATE utf8_general_ci DEFAULT NULL,
+  PRIMARY KEY (`IMG_ID`) 
+) ;
