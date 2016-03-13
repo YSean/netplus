@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.net.plus.mapper.MenuGroupMapper" >
+  <resultMap id="BaseResultMap" type="com.net.plus.model.MenuGroup" >
+    <id column="gmenu_seq" property="gmenuSeq" jdbcType="VARCHAR" />
+    <result column="gmenu_type" property="gmenuType" jdbcType="VARCHAR" />
+    <result column="group_id" property="groupId" jdbcType="VARCHAR" />
+    <result column="country" property="country" jdbcType="VARCHAR" />
+    <result column="provincecode" property="provincecode" jdbcType="VARCHAR" />
+    <result column="citycode" property="citycode" jdbcType="VARCHAR" />
+    <result column="language" property="language" jdbcType="VARCHAR" />
+    <result column="cient_plat" property="cientPlat" jdbcType="VARCHAR" />
+    <result column="sex" property="sex" jdbcType="CHAR" />
+    <result column="extention" property="extention" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    gmenu_seq, gmenu_type, group_id, country, provincecode, citycode, language, cient_plat, 
+    sex, extention
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.net.plus.model.MenuGroupExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from menu_group
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from menu_group
+    where gmenu_seq = #{gmenuSeq,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from menu_group
+    where gmenu_seq = #{gmenuSeq,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.net.plus.model.MenuGroupExample" >
+    delete from menu_group
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.net.plus.model.MenuGroup" >
+    insert into menu_group (gmenu_seq, gmenu_type, group_id, 
+      country, provincecode, citycode, 
+      language, cient_plat, sex, 
+      extention)
+    values (#{gmenuSeq,jdbcType=VARCHAR}, #{gmenuType,jdbcType=VARCHAR}, #{groupId,jdbcType=VARCHAR}, 
+      #{country,jdbcType=VARCHAR}, #{provincecode,jdbcType=VARCHAR}, #{citycode,jdbcType=VARCHAR}, 
+      #{language,jdbcType=VARCHAR}, #{cientPlat,jdbcType=VARCHAR}, #{sex,jdbcType=CHAR}, 
+      #{extention,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.net.plus.model.MenuGroup" >
+    insert into menu_group
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="gmenuSeq != null" >
+        gmenu_seq,
+      </if>
+      <if test="gmenuType != null" >
+        gmenu_type,
+      </if>
+      <if test="groupId != null" >
+        group_id,
+      </if>
+      <if test="country != null" >
+        country,
+      </if>
+      <if test="provincecode != null" >
+        provincecode,
+      </if>
+      <if test="citycode != null" >
+        citycode,
+      </if>
+      <if test="language != null" >
+        language,
+      </if>
+      <if test="cientPlat != null" >
+        cient_plat,
+      </if>
+      <if test="sex != null" >
+        sex,
+      </if>
+      <if test="extention != null" >
+        extention,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="gmenuSeq != null" >
+        #{gmenuSeq,jdbcType=VARCHAR},
+      </if>
+      <if test="gmenuType != null" >
+        #{gmenuType,jdbcType=VARCHAR},
+      </if>
+      <if test="groupId != null" >
+        #{groupId,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null" >
+        #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="provincecode != null" >
+        #{provincecode,jdbcType=VARCHAR},
+      </if>
+      <if test="citycode != null" >
+        #{citycode,jdbcType=VARCHAR},
+      </if>
+      <if test="language != null" >
+        #{language,jdbcType=VARCHAR},
+      </if>
+      <if test="cientPlat != null" >
+        #{cientPlat,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        #{sex,jdbcType=CHAR},
+      </if>
+      <if test="extention != null" >
+        #{extention,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.net.plus.model.MenuGroupExample" resultType="java.lang.Integer" >
+    select count(*) from menu_group
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update menu_group
+    <set >
+      <if test="record.gmenuSeq != null" >
+        gmenu_seq = #{record.gmenuSeq,jdbcType=VARCHAR},
+      </if>
+      <if test="record.gmenuType != null" >
+        gmenu_type = #{record.gmenuType,jdbcType=VARCHAR},
+      </if>
+      <if test="record.groupId != null" >
+        group_id = #{record.groupId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.country != null" >
+        country = #{record.country,jdbcType=VARCHAR},
+      </if>
+      <if test="record.provincecode != null" >
+        provincecode = #{record.provincecode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.citycode != null" >
+        citycode = #{record.citycode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.language != null" >
+        language = #{record.language,jdbcType=VARCHAR},
+      </if>
+      <if test="record.cientPlat != null" >
+        cient_plat = #{record.cientPlat,jdbcType=VARCHAR},
+      </if>
+      <if test="record.sex != null" >
+        sex = #{record.sex,jdbcType=CHAR},
+      </if>
+      <if test="record.extention != null" >
+        extention = #{record.extention,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update menu_group
+    set gmenu_seq = #{record.gmenuSeq,jdbcType=VARCHAR},
+      gmenu_type = #{record.gmenuType,jdbcType=VARCHAR},
+      group_id = #{record.groupId,jdbcType=VARCHAR},
+      country = #{record.country,jdbcType=VARCHAR},
+      provincecode = #{record.provincecode,jdbcType=VARCHAR},
+      citycode = #{record.citycode,jdbcType=VARCHAR},
+      language = #{record.language,jdbcType=VARCHAR},
+      cient_plat = #{record.cientPlat,jdbcType=VARCHAR},
+      sex = #{record.sex,jdbcType=CHAR},
+      extention = #{record.extention,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.net.plus.model.MenuGroup" >
+    update menu_group
+    <set >
+      <if test="gmenuType != null" >
+        gmenu_type = #{gmenuType,jdbcType=VARCHAR},
+      </if>
+      <if test="groupId != null" >
+        group_id = #{groupId,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null" >
+        country = #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="provincecode != null" >
+        provincecode = #{provincecode,jdbcType=VARCHAR},
+      </if>
+      <if test="citycode != null" >
+        citycode = #{citycode,jdbcType=VARCHAR},
+      </if>
+      <if test="language != null" >
+        language = #{language,jdbcType=VARCHAR},
+      </if>
+      <if test="cientPlat != null" >
+        cient_plat = #{cientPlat,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        sex = #{sex,jdbcType=CHAR},
+      </if>
+      <if test="extention != null" >
+        extention = #{extention,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where gmenu_seq = #{gmenuSeq,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.net.plus.model.MenuGroup" >
+    update menu_group
+    set gmenu_type = #{gmenuType,jdbcType=VARCHAR},
+      group_id = #{groupId,jdbcType=VARCHAR},
+      country = #{country,jdbcType=VARCHAR},
+      provincecode = #{provincecode,jdbcType=VARCHAR},
+      citycode = #{citycode,jdbcType=VARCHAR},
+      language = #{language,jdbcType=VARCHAR},
+      cient_plat = #{cientPlat,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=CHAR},
+      extention = #{extention,jdbcType=VARCHAR}
+    where gmenu_seq = #{gmenuSeq,jdbcType=VARCHAR}
+  </update>
+</mapper>

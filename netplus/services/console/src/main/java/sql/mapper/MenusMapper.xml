@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.net.plus.mapper.MenusMapper" >
+  <resultMap id="BaseResultMap" type="com.net.plus.model.Menus" >
+    <id column="menu_seq" property="menuSeq" jdbcType="VARCHAR" />
+    <result column="menu_name" property="menuName" jdbcType="VARCHAR" />
+    <result column="menu_type" property="menuType" jdbcType="CHAR" />
+    <result column="gmenu_seq" property="gmenuSeq" jdbcType="VARCHAR" />
+    <result column="parent_menu" property="parentMenu" jdbcType="VARCHAR" />
+    <result column="order_id" property="orderId" jdbcType="CHAR" />
+    <result column="key" property="key" jdbcType="VARCHAR" />
+    <result column="def" property="def" jdbcType="VARCHAR" />
+    <result column="media_id" property="mediaId" jdbcType="VARCHAR" />
+    <result column="ctime" property="ctime" jdbcType="TIMESTAMP" />
+    <result column="state" property="state" jdbcType="CHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    menu_seq, menu_name, menu_type, gmenu_seq, parent_menu, order_id, key, def, media_id, 
+    ctime, state
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.net.plus.model.MenusExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from menus
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from menus
+    where menu_seq = #{menuSeq,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from menus
+    where menu_seq = #{menuSeq,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.net.plus.model.MenusExample" >
+    delete from menus
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.net.plus.model.Menus" >
+    insert into menus (menu_seq, menu_name, menu_type, 
+      gmenu_seq, parent_menu, order_id, 
+      key, def, media_id, 
+      ctime, state)
+    values (#{menuSeq,jdbcType=VARCHAR}, #{menuName,jdbcType=VARCHAR}, #{menuType,jdbcType=CHAR}, 
+      #{gmenuSeq,jdbcType=VARCHAR}, #{parentMenu,jdbcType=VARCHAR}, #{orderId,jdbcType=CHAR}, 
+      #{key,jdbcType=VARCHAR}, #{def,jdbcType=VARCHAR}, #{mediaId,jdbcType=VARCHAR}, 
+      #{ctime,jdbcType=TIMESTAMP}, #{state,jdbcType=CHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.net.plus.model.Menus" >
+    insert into menus
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="menuSeq != null" >
+        menu_seq,
+      </if>
+      <if test="menuName != null" >
+        menu_name,
+      </if>
+      <if test="menuType != null" >
+        menu_type,
+      </if>
+      <if test="gmenuSeq != null" >
+        gmenu_seq,
+      </if>
+      <if test="parentMenu != null" >
+        parent_menu,
+      </if>
+      <if test="orderId != null" >
+        order_id,
+      </if>
+      <if test="key != null" >
+        key,
+      </if>
+      <if test="def != null" >
+        def,
+      </if>
+      <if test="mediaId != null" >
+        media_id,
+      </if>
+      <if test="ctime != null" >
+        ctime,
+      </if>
+      <if test="state != null" >
+        state,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="menuSeq != null" >
+        #{menuSeq,jdbcType=VARCHAR},
+      </if>
+      <if test="menuName != null" >
+        #{menuName,jdbcType=VARCHAR},
+      </if>
+      <if test="menuType != null" >
+        #{menuType,jdbcType=CHAR},
+      </if>
+      <if test="gmenuSeq != null" >
+        #{gmenuSeq,jdbcType=VARCHAR},
+      </if>
+      <if test="parentMenu != null" >
+        #{parentMenu,jdbcType=VARCHAR},
+      </if>
+      <if test="orderId != null" >
+        #{orderId,jdbcType=CHAR},
+      </if>
+      <if test="key != null" >
+        #{key,jdbcType=VARCHAR},
+      </if>
+      <if test="def != null" >
+        #{def,jdbcType=VARCHAR},
+      </if>
+      <if test="mediaId != null" >
+        #{mediaId,jdbcType=VARCHAR},
+      </if>
+      <if test="ctime != null" >
+        #{ctime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="state != null" >
+        #{state,jdbcType=CHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.net.plus.model.MenusExample" resultType="java.lang.Integer" >
+    select count(*) from menus
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update menus
+    <set >
+      <if test="record.menuSeq != null" >
+        menu_seq = #{record.menuSeq,jdbcType=VARCHAR},
+      </if>
+      <if test="record.menuName != null" >
+        menu_name = #{record.menuName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.menuType != null" >
+        menu_type = #{record.menuType,jdbcType=CHAR},
+      </if>
+      <if test="record.gmenuSeq != null" >
+        gmenu_seq = #{record.gmenuSeq,jdbcType=VARCHAR},
+      </if>
+      <if test="record.parentMenu != null" >
+        parent_menu = #{record.parentMenu,jdbcType=VARCHAR},
+      </if>
+      <if test="record.orderId != null" >
+        order_id = #{record.orderId,jdbcType=CHAR},
+      </if>
+      <if test="record.key != null" >
+        key = #{record.key,jdbcType=VARCHAR},
+      </if>
+      <if test="record.def != null" >
+        def = #{record.def,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mediaId != null" >
+        media_id = #{record.mediaId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ctime != null" >
+        ctime = #{record.ctime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.state != null" >
+        state = #{record.state,jdbcType=CHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update menus
+    set menu_seq = #{record.menuSeq,jdbcType=VARCHAR},
+      menu_name = #{record.menuName,jdbcType=VARCHAR},
+      menu_type = #{record.menuType,jdbcType=CHAR},
+      gmenu_seq = #{record.gmenuSeq,jdbcType=VARCHAR},
+      parent_menu = #{record.parentMenu,jdbcType=VARCHAR},
+      order_id = #{record.orderId,jdbcType=CHAR},
+      key = #{record.key,jdbcType=VARCHAR},
+      def = #{record.def,jdbcType=VARCHAR},
+      media_id = #{record.mediaId,jdbcType=VARCHAR},
+      ctime = #{record.ctime,jdbcType=TIMESTAMP},
+      state = #{record.state,jdbcType=CHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.net.plus.model.Menus" >
+    update menus
+    <set >
+      <if test="menuName != null" >
+        menu_name = #{menuName,jdbcType=VARCHAR},
+      </if>
+      <if test="menuType != null" >
+        menu_type = #{menuType,jdbcType=CHAR},
+      </if>
+      <if test="gmenuSeq != null" >
+        gmenu_seq = #{gmenuSeq,jdbcType=VARCHAR},
+      </if>
+      <if test="parentMenu != null" >
+        parent_menu = #{parentMenu,jdbcType=VARCHAR},
+      </if>
+      <if test="orderId != null" >
+        order_id = #{orderId,jdbcType=CHAR},
+      </if>
+      <if test="key != null" >
+        key = #{key,jdbcType=VARCHAR},
+      </if>
+      <if test="def != null" >
+        def = #{def,jdbcType=VARCHAR},
+      </if>
+      <if test="mediaId != null" >
+        media_id = #{mediaId,jdbcType=VARCHAR},
+      </if>
+      <if test="ctime != null" >
+        ctime = #{ctime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="state != null" >
+        state = #{state,jdbcType=CHAR},
+      </if>
+    </set>
+    where menu_seq = #{menuSeq,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.net.plus.model.Menus" >
+    update menus
+    set menu_name = #{menuName,jdbcType=VARCHAR},
+      menu_type = #{menuType,jdbcType=CHAR},
+      gmenu_seq = #{gmenuSeq,jdbcType=VARCHAR},
+      parent_menu = #{parentMenu,jdbcType=VARCHAR},
+      order_id = #{orderId,jdbcType=CHAR},
+      key = #{key,jdbcType=VARCHAR},
+      def = #{def,jdbcType=VARCHAR},
+      media_id = #{mediaId,jdbcType=VARCHAR},
+      ctime = #{ctime,jdbcType=TIMESTAMP},
+      state = #{state,jdbcType=CHAR}
+    where menu_seq = #{menuSeq,jdbcType=VARCHAR}
+  </update>
+</mapper>
