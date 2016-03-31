@@ -90,3 +90,14 @@ cat .git/config
 忽略你自己的带有敏感信息的配置文件，比如存放口令的配置文件。
 
 使用Windows的童鞋注意了，如果你在资源管理器里新建一个.gitignore文件，它会非常弱智地提示你必须输入文件名，但是在文本编辑器里“保存”或者“另存为”就可以把文件保存为.gitignore了。
+
+
+
+
+--
+生成sshkey
+ssh-keygen -t rsa -C "youname@example.com"
+需要填入一个路径/d/codes/dtd/id_rsa
+
+然后在github里面的设置里面，添加公玥
+https://github.com/settings/ssh
