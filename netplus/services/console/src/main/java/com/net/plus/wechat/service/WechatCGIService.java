@@ -12,7 +12,6 @@ import com.net.plus.common.Constants;
 import com.net.plus.exception.NetRuntimeException;
 import com.net.plus.service.HttpClientRequest;
 import com.net.plus.service.HttpClientService;
-import com.net.plus.util.JsonHelper;
 
 @Service
 public class WechatCGIService{

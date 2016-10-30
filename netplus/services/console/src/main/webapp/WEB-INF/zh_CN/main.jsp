@@ -343,7 +343,7 @@
 
 	<!-- GLOBAL SCRIPTS -->
 	<!-- <script src="/console/assets/js/jquery-1.11.3.js"></script> -->
-	<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<script src="/console/assets/js/jquery-1.11.3.js"></script>
 	<script src="/console/plugins/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 	<script src="/console/plugins/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	<!-- END GLOBAL SCRIPTS -->

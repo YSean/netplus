@@ -10,50 +10,31 @@
 	<meta charset="UTF-8" />
 	<jsp:include page="/WEB-INF/zh_CN/layouts/common.jsp"></jsp:include>
 	<script type="text/javascript">
-		function upload(){
-			var formData = new FormData($( "#postForm" )[0]);  
-			$.ajax({
-				url: 'http://localhost:8080/console/image/upload.do' ,  
-		          type: 'POST',  
-		          data: formData,  
-		          async: false,  
-		          cache: false,  
-		          contentType: false,  
-		          processData: false,  
-		          success: function (returndata) {  
-		              alert(returndata);  
-		          },  
-		          error: function (returndata) {  
-		              alert(returndata);  
-		          }
-			});
-		}
-		function publish(){
-			var formData = new FormData($( "#postForm" )[0]);  
-			$.ajax({
-				url: 'http://localhost:8080/console/image/publish.do' ,  
-		          type: 'POST',  
-		          async: false,  
-		          cache: false,  
-		          contentType: false,  
-		          processData: false,  
-		          success: function (returndata) {  
-		              alert(returndata);  
-		          },  
-		          error: function (returndata) {  
-		              alert(returndata);  
-		          }
-			});
-		}
+		
 	</script>
 </head>
 <body>
-	<form id="postForm" method="post" enctype="multipart/form-data">
-		<input type="file" name="file" />
-		<input type="button" value="Submit" onclick="upload()"/><br/>
-		<input type="button" value="Publish" onclick="publish()"/>
-		<span id="serverResponse"></span>
+	<div class="panel">
+	<form action="" method="post">
+		<ol class="breadcrumb">
+		  <li><a href="#">Home</a></li>
+		  <li><a href="#">菜单管理</a></li>
+		  <li class="active">...</li>
+		</ol>
+		<div class="row">
+			<div class="col-xs-4">
+				<div>
+					
+				</div>
+			</div>
+			<div class="col-xs-8">
+				<div>
+					敬请期待
+				</div>
+			</div>
+		</div>
+		
 	</form>
-	<%-- <jsp:include page="/WEB-INF/zh_CN/layouts/ueditor.jsp"></jsp:include> --%>
+	</div>
 </body>
 </html>
